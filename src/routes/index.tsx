@@ -30,7 +30,7 @@ function Index() {
           ¿Cansada de la panza <span className="ap-gold">hinchada</span>?
         </h1>
         <p className="ap-hero-copy">
-          Descubre recetas fáciles y deliciosas para cuidar tu digestión, sentirte más liviana y volver a disfrutar de tu cuerpo, sin dietas extremas ni pasar horas en la cocina.
+          Descubre recetas fáciles y deliciosas para cuidar tu digestión, sentirte mejor y recuperar la confianza frente al espejo, sin dietas extremas.
         </p>
 
         <img
