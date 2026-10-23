@@ -5,7 +5,6 @@ import {
   comparison,
   everydayChallenges,
   faqItems,
-  heroBenefits,
   offerDetails,
   productContents,
   purchaseHref,
@@ -57,20 +56,9 @@ function Index() {
           fetchPriority="high"
         />
 
-        <ul className="ap-hero-benefits">
-          {heroBenefits.map((benefit) => (
-            <li key={benefit}>{benefit}</li>
-          ))}
-        </ul>
         <div className="ap-hero-actions">
-          <ActionLink href={purchaseHref}>Quiero conocer la oferta</ActionLink>
-          <a className="ap-button ap-button--outline" href="#producto">
-            Conocer el ebook
-          </a>
+          <ActionLink href={purchaseHref}>Quiero descubrir el método</ActionLink>
         </div>
-        <p className="ap-hero-note">
-          Textos, precio y detalles del producto pendientes de confirmar.
-        </p>
       </section>
 
       <section className="ap-section ap-section--sand" id="problemas">
