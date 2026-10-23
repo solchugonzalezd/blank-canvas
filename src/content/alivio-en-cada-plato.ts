@@ -10,7 +10,7 @@ export const heroBenefits = [
 export const everydayChallenges = [
   {
     title: "La panza hinchada",
-    description: "Abrís la heladera y terminás preparando siempre lo mismo.",
+    description: "¿Comés y terminás con la panza pesada, hinchada o incómoda, incluso cuando intentás cuidarte?",
   },
   {
     title: "Sentís que comer mejor lleva mucho tiempo",
