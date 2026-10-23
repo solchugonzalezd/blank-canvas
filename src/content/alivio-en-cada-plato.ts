@@ -22,7 +22,7 @@ export const everydayChallenges = [
   },
   {
     title: "\u00a0Te cuesta mantenerlo",
-    description: "Necesitás ideas sencillas que puedan convivir con tus gustos y tu rutina.",
+    description: "Empezás con ganas de cuidarte, pero las recetas complicadas y la falta de tiempo hacen que vuelvas a improvisar.",
   },
 ];
 
