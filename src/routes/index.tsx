@@ -1,247 +1,264 @@
-import { ArrowDown, ArrowRight, Check, Heart, Sparkles } from "lucide-react";
 import { createFileRoute } from "@tanstack/react-router";
+
+import {
+  bonusIdeas,
+  comparison,
+  everydayChallenges,
+  faqItems,
+  heroBenefits,
+  offerDetails,
+  productContents,
+  purchaseHref,
+  recipeIdeas,
+} from "../content/alivio-en-cada-plato";
+import {
+  ActionLink,
+  ImagePlaceholder,
+  PointCard,
+  SectionHeading,
+} from "../components/landing/landing-primitives";
 
 export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const highlights = [
-  {
-    number: "01",
-    title: "Ideas para todos los días",
-    description:
-      "Inspiración rica y cercana para salir de la rutina y volver a disfrutar la cocina.",
-  },
-  {
-    number: "02",
-    title: "Pasos simples, resultados ricos",
-    description:
-      "Recetas explicadas con claridad para que cocinar se sienta más fácil desde el primer paso.",
-  },
-  {
-    number: "03",
-    title: "Una mesa para compartir",
-    description: "Propuestas para preparar algo rico, invitar a los tuyos y disfrutar sin apuro.",
-  },
-];
-
-const included = [
-  "Recetas caseras para sumar variedad a tu menú",
-  "Instrucciones claras para acompañarte en cada preparación",
-  "Ideas para cocinar, compartir y disfrutar en casa",
-];
-
 function Index() {
   return (
-    <main className="min-h-screen overflow-hidden bg-[#fbf8f1] text-[#263a2d]">
-      <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
-        <a href="#inicio" className="flex items-center gap-3" aria-label="La Mesa Simple, inicio">
-          <span className="grid size-10 place-items-center rounded-full bg-[#d9e0cc] text-[#425b42]">
-            <Heart size={18} strokeWidth={1.8} />
-          </span>
-          <span className="font-serif text-xl font-semibold tracking-tight">La Mesa Simple</span>
+    <main className="alivio-page" id="inicio">
+      <header className="ap-container ap-header">
+        <a className="ap-brand" href="#inicio" aria-label="Alivio en Cada Plato, inicio">
+          Alivio en Cada Plato
         </a>
-        <nav
-          className="hidden items-center gap-8 text-sm text-[#596658] md:flex"
-          aria-label="Navegación principal"
-        >
-          <a className="transition hover:text-[#263a2d]" href="#recetario">
-            El recetario
-          </a>
-          <a className="transition hover:text-[#263a2d]" href="#incluye">
-            Qué vas a encontrar
-          </a>
+        <nav className="ap-nav" aria-label="Navegación principal">
+          <a href="#recetas">Recetas</a>
+          <a href="#producto">El ebook</a>
+          <a href="#preguntas">Preguntas frecuentes</a>
         </nav>
-        <a
-          className="inline-flex items-center gap-2 rounded-full bg-[#344c39] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#263a2d]"
-          href="#compra"
-        >
-          Lo quiero <ArrowRight size={16} />
-        </a>
+        <ActionLink href={purchaseHref}>Ver la oferta</ActionLink>
       </header>
 
-      <section
-        id="inicio"
-        className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 pb-20 pt-10 lg:grid-cols-[1fr_0.92fr] lg:px-10 lg:pb-28 lg:pt-16"
-      >
-        <div className="relative z-10 max-w-2xl">
-          <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-[#d9dfd1] bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#586e51]">
-            <Sparkles size={14} /> Un recetario para disfrutar más
-          </div>
-          <h1 className="font-serif text-5xl leading-[1.04] tracking-[-0.045em] sm:text-6xl lg:text-7xl">
-            Que cocinar rico vuelva a ser <span className="italic text-[#a45e3d]">simple.</span>
-          </h1>
-          <p className="mt-7 max-w-xl text-lg leading-8 text-[#667063]">
-            Ideas caseras, pasos claros y ese gustito de sentarse a la mesa con algo hecho por vos.
-            Un recetario para acompañar tus días, sin vueltas.
-          </p>
-          <div className="mt-9 flex flex-wrap items-center gap-4">
-            <a
-              className="inline-flex items-center gap-3 rounded-full bg-[#344c39] px-7 py-4 text-base font-medium text-white shadow-lg shadow-[#344c39]/10 transition hover:-translate-y-0.5 hover:bg-[#263a2d]"
-              href="#compra"
-            >
-              Quiero el recetario <ArrowRight size={18} />
-            </a>
-            <a
-              className="inline-flex items-center gap-2 px-3 py-3 text-sm font-medium text-[#53604f] transition hover:text-[#a45e3d]"
-              href="#incluye"
-            >
-              Conocé qué incluye <ArrowDown size={15} />
-            </a>
-          </div>
-          <div className="mt-10 flex flex-wrap gap-x-7 gap-y-3 border-t border-[#e3e2d8] pt-6 text-sm text-[#70786d]">
-            <span className="inline-flex items-center gap-2">
-              <Check size={15} className="text-[#6c805f]" /> Para cocinar a tu ritmo
-            </span>
-            <span className="inline-flex items-center gap-2">
-              <Check size={15} className="text-[#6c805f]" /> Inspiración para tu mesa
-            </span>
+      <section className="ap-container ap-hero" aria-labelledby="hero-title">
+        <p className="ap-eyebrow">Ebook digital · Alimentación saludable</p>
+        <h1 id="hero-title" className="ap-serif">
+          Alivio en <span>Cada Plato</span>
+        </h1>
+        <p className="ap-hero-copy">
+          Una guía cálida y práctica para sumar ideas saludables a tu rutina, disfrutar de recetas
+          sencillas y encontrar una forma de comer que se sienta posible para vos.
+        </p>
+
+        <div className="ap-ebook-mockup" aria-label="Mockup provisional de la portada del ebook">
+          <div className="ap-ebook-cover">
+            <p className="ap-ebook-cover-label">Guía digital de alimentación</p>
+            <h2 className="ap-serif">
+              Alivio en
+              <br />
+              <span>Cada Plato</span>
+            </h2>
+            <div className="ap-cover-image-space">Espacio para imagen de portada</div>
+            <p className="ap-ebook-cover-label">Recetas · ideas · bienestar cotidiano</p>
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-[560px]" id="recetario">
-          <div className="absolute -right-5 top-8 h-32 w-32 rounded-full bg-[#e8c8a9]/60 blur-2xl" />
-          <div className="absolute -bottom-7 -left-6 h-40 w-40 rounded-full bg-[#d9e0cc]/80 blur-2xl" />
-          <div className="relative overflow-hidden rounded-[2rem] bg-[#e7e2d5] shadow-2xl shadow-[#4a4436]/15 ring-1 ring-black/5">
-            <img
-              src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85"
-              alt="Plato colorido con vegetales frescos sobre una mesa"
-              className="h-[440px] w-full object-cover sm:h-[540px]"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#1e2b20]/75 via-transparent to-[#1e2b20]/5" />
-            <div className="absolute left-6 top-6 rounded-full border border-white/60 bg-[#fbf8f1]/90 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-[#53634e] shadow-sm backdrop-blur">
-              Recetario digital
-            </div>
-            <div className="absolute inset-x-6 bottom-6 rounded-2xl border border-white/70 bg-[#fbf8f1]/95 p-6 shadow-xl backdrop-blur-md sm:inset-x-8 sm:bottom-8 sm:p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#a45e3d]">
-                La Mesa Simple
-              </p>
-              <p className="mt-2 font-serif text-3xl leading-tight tracking-tight sm:text-4xl">
-                Recetas para volver a disfrutar
-              </p>
-              <p className="mt-3 text-sm leading-6 text-[#6d7468]">
-                Cocina rica, cotidiana y hecha con cariño.
-              </p>
-            </div>
-          </div>
-          <div className="absolute -left-5 top-1/2 hidden -translate-y-1/2 rounded-2xl bg-white px-4 py-3 shadow-xl shadow-[#4a4436]/10 sm:block">
-            <p className="font-serif text-lg italic text-[#667b59]">Hecho para compartir</p>
+        <ul className="ap-hero-benefits">
+          {heroBenefits.map((benefit) => (
+            <li key={benefit}>{benefit}</li>
+          ))}
+        </ul>
+        <div className="ap-hero-actions">
+          <ActionLink href={purchaseHref}>Quiero conocer la oferta</ActionLink>
+          <a className="ap-button ap-button--outline" href="#producto">
+            Conocer el ebook
+          </a>
+        </div>
+        <p className="ap-hero-note">
+          Textos, precio y detalles del producto pendientes de confirmar.
+        </p>
+      </section>
+
+      <section className="ap-photo-feature" aria-label="Fotografía protagonista del ebook">
+        <div className="ap-container">
+          <ImagePlaceholder
+            className="ap-image-placeholder--woman"
+            label="Mujer en una cocina luminosa sosteniendo Alivio en Cada Plato"
+            detail="Reemplazar este espacio por una fotografía natural y editorial."
+          />
+        </div>
+      </section>
+
+      <section className="ap-section ap-section--white" id="problemas">
+        <div className="ap-container">
+          <SectionHeading
+            eyebrow="Si esto te suena familiar"
+            description="Comer de una manera que te haga bien no debería sentirse como otra obligación imposible de sostener."
+          >
+            ¿Te gustaría comer mejor, pero no sabés por dónde empezar?
+          </SectionHeading>
+          <div className="ap-point-grid">
+            {everydayChallenges.map((item, index) => (
+              <PointCard
+                key={item.title}
+                number={`0${index + 1}`}
+                title={item.title}
+                description={item.description}
+              />
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="border-y border-[#e5e4da] bg-[#f3f1e8] px-6 py-16 lg:px-10 lg:py-20">
-        <div className="mx-auto max-w-7xl">
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#9a674d]">
-              Menos vueltas, más mesa
-            </p>
-            <h2 className="mt-4 font-serif text-4xl leading-tight tracking-[-0.035em] sm:text-5xl">
-              Una ayuda rica para tus días reales.
-            </h2>
-            <p className="mx-auto mt-5 max-w-xl leading-7 text-[#687064]">
-              Abrí el recetario cuando necesites una idea nueva, ganas de cocinar o una excusa para
-              compartir algo rico.
-            </p>
+      <section className="ap-section ap-section--sand" id="enfoque">
+        <div className="ap-container">
+          <SectionHeading
+            eyebrow="Un enfoque más amable"
+            description="No se trata de hacerlo perfecto: se trata de encontrar opciones prácticas y flexibles para tu vida cotidiana."
+          >
+            Menos restricciones. Más equilibrio en cada plato.
+          </SectionHeading>
+          <div className="ap-comparison">
+            <article className="ap-compare-card">
+              <p className="ap-compare-kicker">Una mirada rígida</p>
+              <h3 className="ap-serif">{comparison.restrictive.heading}</h3>
+              <p>{comparison.restrictive.description}</p>
+              <ul>
+                {comparison.restrictive.points.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+            </article>
+            <article className="ap-compare-card ap-compare-card--practical">
+              <p className="ap-compare-kicker">La propuesta del ebook</p>
+              <h3 className="ap-serif">{comparison.practical.heading}</h3>
+              <p>{comparison.practical.description}</p>
+              <ul>
+                {comparison.practical.points.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+            </article>
           </div>
-          <div className="mt-12 grid gap-4 md:grid-cols-3">
-            {highlights.map((item) => (
-              <article
-                key={item.number}
-                className="rounded-3xl border border-[#e5e3d9] bg-[#fbfaf6] p-7 sm:p-8"
-              >
-                <span className="font-serif text-lg italic text-[#a45e3d]">{item.number}</span>
-                <h3 className="mt-6 font-serif text-2xl tracking-tight">{item.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-[#70786d]">{item.description}</p>
+          <p className="ap-inline-note">
+            El ebook es material informativo general y no reemplaza la orientación de un profesional
+            de salud.
+          </p>
+        </div>
+      </section>
+
+      <section className="ap-section ap-section--white" id="recetas">
+        <div className="ap-container">
+          <SectionHeading
+            eyebrow="Ideas para tu mesa"
+            description="Una muestra visual provisional. Reemplazaremos estos ejemplos por las recetas confirmadas del ebook."
+          >
+            Recetas simples para disfrutar todos los días
+          </SectionHeading>
+          <div className="ap-recipe-grid">
+            {recipeIdeas.map((recipe) => (
+              <article className="ap-recipe-card" key={recipe.name}>
+                <ImagePlaceholder
+                  className="ap-image-placeholder--recipe"
+                  label={`Fotografía de ${recipe.name}`}
+                  detail="Espacio para una fotografía real del plato."
+                />
+                <div className="ap-recipe-card-body">
+                  <h3 className="ap-serif">{recipe.name}</h3>
+                  <p className="ap-recipe-note">{recipe.note}</p>
+                </div>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section
-        id="incluye"
-        className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr] lg:px-10 lg:py-28"
-      >
-        <div className="relative overflow-hidden rounded-[2rem] bg-[#d9e0cc] p-8 sm:p-12">
-          <div className="absolute -right-10 -top-12 size-56 rounded-full border border-[#84927b]/30" />
-          <div className="absolute -right-2 -top-4 size-40 rounded-full border border-[#84927b]/30" />
-          <div className="relative max-w-sm">
-            <span className="grid size-12 place-items-center rounded-full bg-[#fbf8f1] text-[#667b59]">
-              <Heart size={20} />
-            </span>
-            <p className="mt-10 font-serif text-4xl leading-tight tracking-tight sm:text-5xl">
-              Cocinar también es una forma de cuidarte.
-            </p>
-            <p className="mt-5 leading-7 text-[#566451]">
-              No hace falta que todo salga perfecto. A veces, una receta sencilla y un ratito en la
-              cocina alcanzan para hacer lindo el día.
-            </p>
-          </div>
-        </div>
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#9a674d]">
-            Adentro vas a encontrar
-          </p>
-          <h2 className="mt-4 max-w-xl font-serif text-4xl leading-tight tracking-[-0.035em] sm:text-5xl">
-            Un recetario pensado para usar, guardar y volver a abrir.
-          </h2>
-          <ul className="mt-8 space-y-5">
-            {included.map((item) => (
-              <li key={item} className="flex items-start gap-4 text-[#606b5c]">
-                <span className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-[#e4e9dd] text-[#586f50]">
-                  <Check size={14} />
-                </span>
-                <span className="leading-7">{item}</span>
-              </li>
-            ))}
-          </ul>
-          <a
-            className="mt-9 inline-flex items-center gap-2 text-sm font-semibold text-[#405a42] transition hover:text-[#a45e3d]"
-            href="#compra"
-          >
-            Quiero sumar estas ideas a mi cocina <ArrowRight size={16} />
-          </a>
-        </div>
-      </section>
-
-      <section id="compra" className="bg-[#344c39] px-6 py-20 text-[#fbf8f1] lg:px-10 lg:py-24">
-        <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1fr_auto]">
-          <div className="max-w-2xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#d8c5a4]">
-              Tu próxima idea empieza acá
-            </p>
-            <h2 className="mt-4 font-serif text-4xl leading-tight tracking-[-0.035em] sm:text-5xl">
-              Hagamos lugar para algo rico en tu mesa.
-            </h2>
-            <p className="mt-5 max-w-xl leading-7 text-white/75">
-              El recetario está presentado. Para habilitar la compra falta sumar el precio y
-              conectar el enlace de pago.
-            </p>
-          </div>
-          <div className="min-w-[min(100%,320px)] rounded-3xl bg-[#fbf8f1] p-7 text-[#263a2d] shadow-xl sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#9a674d]">
-              La Mesa Simple
-            </p>
-            <p className="mt-3 font-serif text-2xl">Recetario digital</p>
-            <p className="mt-2 text-sm leading-6 text-[#71796e]">
-              Precio y forma de entrega a definir.
-            </p>
-            <a
-              className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#344c39] px-5 py-3.5 text-sm font-semibold text-white transition hover:bg-[#263a2d]"
-              href="#compra"
+      <section className="ap-section" id="producto">
+        <div className="ap-container ap-product-grid">
+          <div>
+            <SectionHeading
+              eyebrow="Conocé el producto"
+              description="Alivio en Cada Plato es un ebook digital pensado para acercarte ideas cotidianas de alimentación saludable, sin presentarse como una dieta ni como un tratamiento."
             >
-              Consultar por el recetario <ArrowRight size={16} />
-            </a>
+              Una guía para volver a mirar tus comidas con calma
+            </SectionHeading>
+            <div className="ap-product-card">
+              <h3>Contenido provisorio del ebook</h3>
+              <ul className="ap-product-list">
+                {productContents.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <h3 className="ap-bonus-heading">Bonos sugeridos</h3>
+              <div className="ap-bonus-grid">
+                {bonusIdeas.map((bonus) => (
+                  <article className="ap-bonus-card" key={bonus.name}>
+                    <h3>{bonus.name}</h3>
+                    <p>{bonus.note}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </div>
+          <ImagePlaceholder
+            className="ap-product-image"
+            label="Mockup del ebook abierto junto a ingredientes naturales"
+            detail="Espacio para fotografía del producto o páginas interiores."
+          />
+        </div>
+      </section>
+
+      <section className="ap-section ap-offer-section" id="oferta">
+        <div className="ap-container">
+          <SectionHeading
+            eyebrow="La propuesta"
+            description="Revisá los detalles del producto antes de avanzar. Los datos comerciales se completarán cuando estén definidos."
+          >
+            Sumá nuevas ideas saludables a tu rutina
+          </SectionHeading>
+          <div className="ap-offer-card">
+            <p className="ap-eyebrow">Ebook digital</p>
+            <h3 className="ap-offer-title">Alivio en Cada Plato</h3>
+            <p className="ap-offer-price-label">Precio</p>
+            <p className="ap-offer-price">A definir</p>
+            <ul className="ap-offer-list">
+              {offerDetails.map((detail) => (
+                <li key={detail}>{detail}</li>
+              ))}
+            </ul>
+            <ActionLink href={purchaseHref}>Quiero el ebook</ActionLink>
+            <p className="ap-offer-note">
+              Sin integración de pago activa. El enlace se configura en el contenido del proyecto
+              cuando el checkout esté listo.
+            </p>
           </div>
         </div>
       </section>
 
-      <footer className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-7 text-sm text-[#7b8177] sm:flex-row sm:items-center sm:justify-between lg:px-10">
-        <a href="#inicio" className="font-serif text-lg font-semibold text-[#40533f]">
-          La Mesa Simple
-        </a>
-        <p>Hecho con cariño, para disfrutar alrededor de la mesa.</p>
+      <section className="ap-section ap-section--white" id="preguntas">
+        <div className="ap-container">
+          <SectionHeading
+            eyebrow="Antes de elegir"
+            description="Respuestas provisorias para que la información importante quede clara."
+          >
+            Preguntas frecuentes
+          </SectionHeading>
+          <div className="ap-faq-list">
+            {faqItems.map((item) => (
+              <details className="ap-faq-item" key={item.question}>
+                <summary>{item.question}</summary>
+                <p>{item.answer}</p>
+              </details>
+            ))}
+          </div>
+          <div className="ap-final-cta">
+            <p className="ap-eyebrow">Alivio en Cada Plato</p>
+            <h2 className="ap-serif">Una forma más amable de inspirar tu cocina.</h2>
+            <ActionLink href={purchaseHref}>Ver detalles de la oferta</ActionLink>
+          </div>
+        </div>
+      </section>
+
+      <footer className="ap-container ap-footer">
+        <p className="ap-brand">Alivio en Cada Plato</p>
+        <p>Textos y detalles comerciales provisionales.</p>
       </footer>
     </main>
   );
