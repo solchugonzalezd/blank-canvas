@@ -50,7 +50,7 @@ function Index() {
       <section className="ap-section ap-section--sand" id="problemas">
         <div className="ap-container">
           <SectionHeading
-            eyebrow="Si esto te suena familiar"
+            eyebrow="¿TE SENTÍS IDENTIFICADA?"
             description="Comer de una manera que te haga bien no debería sentirse como otra obligación imposible de sostener."
           >
             ¿Te gustaría comer mejor, pero no sabés por dónde empezar?
