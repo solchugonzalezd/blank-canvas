@@ -40,7 +40,7 @@ function Index() {
       </header>
 
       <section className="ap-container ap-hero" aria-labelledby="hero-title">
-        <p className="ap-eyebrow">Ebook digital · Alimentación saludable</p>
+        <p className="ap-eyebrow">METODO MENU ANTIINFLAMATORIO</p>
         <h1 id="hero-title" className="ap-serif">
           ¿Cansada de la panza hinchada? Descubre cómo sentirte más liviana
         </h1>
