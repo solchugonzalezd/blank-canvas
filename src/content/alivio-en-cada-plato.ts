@@ -17,7 +17,7 @@ export const everydayChallenges = [
     description: "Querés alimentarte mejor, pero te faltan ideas de comidas ricas, fáciles y prácticas para tu día a día.",
   },
   {
-    title: "Las reglas estrictas te cansan",
+    title: "No te sentís cómoda",
     description: "Querés cuidarte sin vivir contando, prohibiendo o empezando de nuevo.",
   },
   {
