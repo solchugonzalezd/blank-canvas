@@ -276,6 +276,7 @@
 }
 
 .ap-hero h1 {
+  color: var(--ap-forest);
   max-width: 900px;
   margin: 0 auto;
   font-size: clamp(2.8rem, 10vw, 5.8rem);
