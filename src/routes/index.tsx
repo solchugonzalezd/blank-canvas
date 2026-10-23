@@ -73,17 +73,7 @@ function Index() {
         </p>
       </section>
 
-      <section className="ap-photo-feature" aria-label="Fotografía protagonista del ebook">
-        <div className="ap-container">
-          <ImagePlaceholder
-            className="ap-image-placeholder--woman"
-            label="Mujer en una cocina luminosa sosteniendo Alivio en Cada Plato"
-            detail="Reemplazar este espacio por una fotografía natural y editorial."
-          />
-        </div>
-      </section>
-
-      <section className="ap-section ap-section--white" id="problemas">
+      <section className="ap-section ap-section--sand" id="problemas">
         <div className="ap-container">
           <SectionHeading
             eyebrow="Si esto te suena familiar"
