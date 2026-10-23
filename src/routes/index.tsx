@@ -42,7 +42,7 @@ function Index() {
       <section className="ap-container ap-hero" aria-labelledby="hero-title">
         <p className="ap-eyebrow">METODO MENU ANTIINFLAMATORIO</p>
         <h1 id="hero-title" className="ap-serif">
-          ¿Cansada de la panza hinchada? Descubre cómo sentirte más liviana
+          ¿Cansada de la panza hinchada? <span className="ap-gold">Descubre cómo sentirte más liviana</span>
         </h1>
         <p className="ap-hero-copy">
           Descubre recetas fáciles y deliciosas para cuidar tu digestión, sentirte más liviana y volver a disfrutar de tu cuerpo, sin dietas extremas ni pasar horas en la cocina.
