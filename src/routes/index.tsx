@@ -53,7 +53,7 @@ function Index() {
             eyebrow="¿TE SENTÍS IDENTIFICADA?"
             description="Comer de una manera que te haga bien no debería sentirse como otra obligación imposible de sostener."
           >
-            ¿Te gustaría comer mejor, pero no sabés por dónde empezar?
+            No es solo la panza hinchada. Es cómo te hace sentir.
           </SectionHeading>
           <div className="ap-point-grid">
             {everydayChallenges.map((item, index) => (
