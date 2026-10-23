@@ -45,8 +45,7 @@ function Index() {
           ¿Cansada de la panza hinchada? Descubre cómo sentirte más liviana
         </h1>
         <p className="ap-hero-copy">
-          Una guía cálida y práctica para sumar ideas saludables a tu rutina, disfrutar de recetas
-          sencillas y encontrar una forma de comer que se sienta posible para vos.
+          Descubre recetas fáciles y deliciosas para cuidar tu digestión, sentirte más liviana y volver a disfrutar de tu cuerpo, sin dietas extremas ni pasar horas en la cocina.
         </p>
 
         <div className="ap-ebook-mockup" aria-label="Mockup provisional de la portada del ebook">
