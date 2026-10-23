@@ -48,18 +48,14 @@ function Index() {
           Descubre recetas fáciles y deliciosas para cuidar tu digestión, sentirte más liviana y volver a disfrutar de tu cuerpo, sin dietas extremas ni pasar horas en la cocina.
         </p>
 
-        <div className="ap-ebook-mockup" aria-label="Mockup provisional de la portada del ebook">
-          <div className="ap-ebook-cover">
-            <p className="ap-ebook-cover-label">Guía digital de alimentación</p>
-            <h2 className="ap-serif">
-              Alivio en
-              <br />
-              <span>Cada Plato</span>
-            </h2>
-            <div className="ap-cover-image-space">Espacio para imagen de portada</div>
-            <p className="ap-ebook-cover-label">Recetas · ideas · bienestar cotidiano</p>
-          </div>
-        </div>
+        <img
+          className="ap-hero-mockup"
+          src="/images/alivio-mockup.webp"
+          alt="Mockup del ebook con su portada y páginas de recetas"
+          width="1254"
+          height="1254"
+          fetchPriority="high"
+        />
 
         <ul className="ap-hero-benefits">
           {heroBenefits.map((benefit) => (
