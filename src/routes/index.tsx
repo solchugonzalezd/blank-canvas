@@ -65,6 +65,7 @@ function Index() {
               />
             ))}
           </div>
+          <p className="ap-problem-closing ap-serif">No tenés por qué seguir sintiéndote así.</p>
         </div>
       </section>
 

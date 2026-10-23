@@ -423,6 +423,14 @@
   background: var(--ap-white);
 }
 
+.ap-problem-closing {
+  margin: 1.8rem 0 0;
+  color: var(--ap-forest);
+  font-size: clamp(1.35rem, 4vw, 1.8rem);
+  line-height: 1.3;
+  text-align: center;
+}
+
 .ap-section--sand {
   background: var(--ap-sand);
 }
