@@ -131,7 +131,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="ap-section ap-section--white" id="recetas">
+      <section className="ap-section ap-section--sand" id="recetas">
         <div className="ap-container">
           <SectionHeading
             eyebrow="Ideas para tu mesa"
