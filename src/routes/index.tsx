@@ -42,7 +42,7 @@ function Index() {
       <section className="ap-container ap-hero" aria-labelledby="hero-title">
         <p className="ap-eyebrow">Ebook digital · Alimentación saludable</p>
         <h1 id="hero-title" className="ap-serif">
-          Alivio en <span>Cada Plato</span>
+          ¿Cansada de la panza hinchada? Descubre cómo sentirte más liviana
         </h1>
         <p className="ap-hero-copy">
           Una guía cálida y práctica para sumar ideas saludables a tu rutina, disfrutar de recetas
