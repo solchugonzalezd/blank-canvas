@@ -9,7 +9,7 @@ export const heroBenefits = [
 
 export const everydayChallenges = [
   {
-    title: "Llegás a la comida sin ideas",
+    title: "La panza hinchada",
     description: "Abrís la heladera y terminás preparando siempre lo mismo.",
   },
   {
