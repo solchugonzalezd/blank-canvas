@@ -18,7 +18,7 @@ export const everydayChallenges = [
   },
   {
     title: "No te sentís cómoda",
-    description: "Querés cuidarte sin vivir contando, prohibiendo o empezando de nuevo.",
+    description: "Querés ponerte tu ropa, mirarte al espejo y sentirte a gusto con tu cuerpo, sin que la hinchazón te incomode.",
   },
   {
     title: "Buscás algo que encaje en tu vida",
