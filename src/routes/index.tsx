@@ -24,22 +24,8 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main className="alivio-page" id="inicio">
-      <header className="ap-container ap-header">
-        <a className="ap-brand" href="#inicio" aria-label="Alivio en Cada Plato, inicio">
-          Alivio en Cada Plato
-        </a>
-        <nav className="ap-nav" aria-label="Navegación principal">
-          <a href="#recetas">Recetas</a>
-          <a href="#producto">El ebook</a>
-          <a href="#bonos">Bonos</a>
-          <a href="#opiniones">Opiniones</a>
-          <a href="#preguntas">Preguntas frecuentes</a>
-        </nav>
-        <ActionLink href={purchaseHref}>Ver la oferta</ActionLink>
-      </header>
-
       <section className="ap-container ap-hero" aria-labelledby="hero-title">
-        <p className="ap-eyebrow">METODO MENU ANTIINFLAMATORIO</p>
+        <p className="ap-eyebrow ap-hero-eyebrow">METODO MENU ANTIINFLAMATORIO</p>
         <h1 id="hero-title" className="ap-serif">
           ¿Cansada de la panza <span className="ap-gold">hinchada</span>?
         </h1>

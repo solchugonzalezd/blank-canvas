@@ -265,6 +265,10 @@
   text-align: center;
 }
 
+.ap-hero-eyebrow {
+  color: var(--ap-gold);
+}
+
 .ap-eyebrow {
   margin: 0 0 0.85rem;
   color: #81652b;
