@@ -284,6 +284,11 @@
   line-height: 1.04;
 }
 
+.ap-hero-promise-followup {
+  display: block;
+  margin-top: 0.14em;
+}
+
 .ap-hero h1 span,
 .ap-gold {
   color: var(--ap-gold);
