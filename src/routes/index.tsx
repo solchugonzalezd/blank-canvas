@@ -51,7 +51,7 @@ function Index() {
         <div className="ap-container">
           <SectionHeading
             eyebrow="¿TE SENTÍS IDENTIFICADA?"
-            description="Comer de una manera que te haga bien no debería sentirse como otra obligación imposible de sostener."
+            description="Querés comer mejor, sentirte más liviana y verte bien, pero terminás el día con pesadez, incomodidad y la sensación de no saber qué cambiar."
           >
             No es solo la panza hinchada. Es cómo te hace sentir.
           </SectionHeading>
