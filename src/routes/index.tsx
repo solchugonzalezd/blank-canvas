@@ -94,7 +94,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="ap-section ap-section--sand" id="enfoque">
+      <section className="ap-section ap-section--white" id="enfoque">
         <div className="ap-container">
           <SectionHeading
             eyebrow="Un enfoque más amable"
