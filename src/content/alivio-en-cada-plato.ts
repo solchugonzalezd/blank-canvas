@@ -13,7 +13,7 @@ export const everydayChallenges = [
     description: "Comés y terminás con la panza pesada, hinchada o incómoda, incluso cuando intentás cuidarte",
   },
   {
-    title: "Sentís que comer mejor lleva mucho tiempo",
+    title: "No sabés qué comer",
     description: "Entre el trabajo y las obligaciones, planificar parece otra tarea más.",
   },
   {
