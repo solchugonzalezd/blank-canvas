@@ -32,6 +32,8 @@ function Index() {
         <nav className="ap-nav" aria-label="Navegación principal">
           <a href="#recetas">Recetas</a>
           <a href="#producto">El ebook</a>
+          <a href="#bonos">Bonos</a>
+          <a href="#opiniones">Opiniones</a>
           <a href="#preguntas">Preguntas frecuentes</a>
         </nav>
         <ActionLink href={purchaseHref}>Ver la oferta</ActionLink>
@@ -227,6 +229,46 @@ function Index() {
             <p className="ap-offer-note">
               Sin integración de pago activa. El enlace se configura en el contenido del proyecto
               cuando el checkout esté listo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="ap-section ap-section--sand" id="bonos">
+        <div className="ap-container">
+          <SectionHeading
+            eyebrow="Material adicional"
+            description="Ideas de bonos para acompañar el ebook. Los recursos incluidos se confirmarán al definir el producto final."
+          >
+            Además, también recibís
+          </SectionHeading>
+          <div className="ap-bonus-grid ap-bonus-grid--featured">
+            {bonusIdeas.map((bonus, index) => (
+              <article className="ap-bonus-card ap-bonus-card--featured" key={bonus.name}>
+                <span className="ap-card-number">Bono 0{index + 1}</span>
+                <h3 className="ap-serif">{bonus.name}</h3>
+                <p>{bonus.note}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="ap-section ap-section--white" id="opiniones">
+        <div className="ap-container">
+          <SectionHeading
+            eyebrow="Experiencias de lectoras y lectores"
+            description="Queremos compartir únicamente comentarios auténticos, con autorización de quienes los escribieron."
+          >
+            Opiniones reales
+          </SectionHeading>
+          <div className="ap-testimonials-empty">
+            <p className="ap-testimonials-mark" aria-hidden="true">
+              “ ”
+            </p>
+            <p>
+              Estamos reuniendo las primeras opiniones para publicar acá. Esta sección se completará
+              con testimonios reales; no usamos reseñas inventadas.
             </p>
           </div>
         </div>
