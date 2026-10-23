@@ -284,6 +284,10 @@
   line-height: 1.04;
 }
 
+.ap-hero h1 .ap-hero-promise-followup {
+  color: var(--ap-forest);
+}
+
 .ap-hero-promise-followup {
   display: block;
   margin-top: 0.14em;
