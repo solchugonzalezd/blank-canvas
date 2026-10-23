@@ -21,7 +21,7 @@ export const everydayChallenges = [
     description: "Querés ponerte tu ropa, mirarte al espejo y sentirte a gusto con tu cuerpo, sin que la hinchazón te incomode.",
   },
   {
-    title: "Buscás algo que encaje en tu vida",
+    title: "\u00a0Te cuesta mantenerlo",
     description: "Necesitás ideas sencillas que puedan convivir con tus gustos y tu rutina.",
   },
 ];
