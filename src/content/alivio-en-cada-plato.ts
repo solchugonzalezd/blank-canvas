@@ -14,7 +14,7 @@ export const everydayChallenges = [
   },
   {
     title: "No sabés qué comer",
-    description: "Entre el trabajo y las obligaciones, planificar parece otra tarea más.",
+    description: "Querés alimentarte mejor, pero te faltan ideas de comidas ricas, fáciles y prácticas para tu día a día.",
   },
   {
     title: "Las reglas estrictas te cansan",
