@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Image-bearing PointCard instances use a dedicated image frame and text body so media sizing is independent of text spacing; preserve the padding of text-only instances.

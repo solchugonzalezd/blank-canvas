@@ -18,6 +18,16 @@ import {
 } from "../components/landing/landing-primitives";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Alivio en Cada Plato | Método menú antiinflamatorio" },
+      { name: "description", content: "Recetas fáciles e ideas prácticas para cuidar tu digestión y organizar tus comidas sin dietas extremas." },
+      { property: "og:title", content: "Alivio en Cada Plato | Método menú antiinflamatorio" },
+      { property: "og:description", content: "Recetas fáciles e ideas prácticas para cuidar tu digestión y organizar tus comidas sin dietas extremas." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
