@@ -520,17 +520,20 @@
 
 .ap-point-card {
   min-height: 190px;
+  overflow: hidden;
   padding: 1.4rem;
 }
 
 .ap-point-card-image {
   display: block;
-  width: calc(100% + 2.8rem);
+  box-sizing: border-box;
+  width: 100%;
   aspect-ratio: 1 / 1;
-  margin: -1.4rem -1.4rem 1.15rem;
-  border-radius: 11px 11px 0 0;
-  object-fit: cover;
-  object-position: center 45%;
+  margin: 0 0 1.15rem;
+  border-radius: 6px;
+  padding: 0.35rem;
+  object-fit: contain;
+  object-position: center;
 }
 
 .ap-card-number {
