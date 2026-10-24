@@ -523,6 +523,15 @@
   padding: 1.4rem;
 }
 
+.ap-point-card-image {
+  display: block;
+  width: calc(100% + 2.8rem);
+  aspect-ratio: 4 / 3;
+  margin: -1.4rem -1.4rem 1.15rem;
+  border-radius: 11px 11px 0 0;
+  object-fit: cover;
+}
+
 .ap-card-number {
   display: inline-block;
   margin-bottom: 0.7rem;
