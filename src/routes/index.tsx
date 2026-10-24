@@ -69,7 +69,9 @@ function Index() {
                       ? "/images/no-sabes-que-comer.jpg"
                       : index === 2
                         ? "/images/no-te-sentis-comoda.jpg"
-                        : undefined
+                        : index === 3
+                          ? "/images/te-cuesta-mantenerlo.jpg"
+                          : undefined
                 }
                 imageAlt={
                   index === 0
@@ -78,7 +80,9 @@ function Index() {
                       ? "Mujer eligiendo qué preparar frente a la heladera"
                       : index === 2
                         ? "Mujer intentando abrocharse un jean"
-                        : undefined
+                        : index === 3
+                          ? "Mujer frustrada al elegir entre frutas y antojos"
+                          : undefined
                 }
               />
             ))}
