@@ -67,14 +67,18 @@ function Index() {
                     ? "/images/panza-hinchada.jpg"
                     : index === 1
                       ? "/images/no-sabes-que-comer.jpg"
-                      : undefined
+                      : index === 2
+                        ? "/images/no-te-sentis-comoda.jpg"
+                        : undefined
                 }
                 imageAlt={
                   index === 0
                     ? "Mujer con malestar abdominal después de comer"
                     : index === 1
                       ? "Mujer eligiendo qué preparar frente a la heladera"
-                      : undefined
+                      : index === 2
+                        ? "Mujer intentando abrocharse un jean"
+                        : undefined
                 }
               />
             ))}
