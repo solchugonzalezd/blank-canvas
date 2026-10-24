@@ -62,11 +62,17 @@ type PointCardProps = {
 
 export function PointCard({ title, description, number, imageSrc, imageAlt }: PointCardProps) {
   return (
-    <article className="ap-point-card">
-      {imageSrc ? <img className="ap-point-card-image" src={imageSrc} alt={imageAlt ?? ""} loading="lazy" /> : null}
-      {number ? <span className="ap-card-number">{number}</span> : null}
-      <h3 className="ap-serif">{title}</h3>
-      <p>{description}</p>
+    <article className={`ap-point-card${imageSrc ? " ap-point-card--with-image" : ""}`}>
+      {imageSrc ? (
+        <div className="ap-point-card-image-frame">
+          <img className="ap-point-card-image" src={imageSrc} alt={imageAlt ?? ""} loading="lazy" />
+        </div>
+      ) : null}
+      <div className="ap-point-card-body">
+        {number ? <span className="ap-card-number">{number}</span> : null}
+        <h3 className="ap-serif">{title}</h3>
+        <p>{description}</p>
+      </div>
     </article>
   );
 }
