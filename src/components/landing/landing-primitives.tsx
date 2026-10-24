@@ -56,8 +56,8 @@ type PointCardProps = {
   title: string;
   description: string;
   number?: string;
-  imageSrc?: string;
-  imageAlt?: string;
+  imageSrc?: string | undefined;
+  imageAlt?: string | undefined;
 };
 
 export function PointCard({ title, description, number, imageSrc, imageAlt }: PointCardProps) {
