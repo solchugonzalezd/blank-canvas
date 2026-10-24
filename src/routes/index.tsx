@@ -62,8 +62,20 @@ function Index() {
                 number={`0${index + 1}`}
                 title={item.title}
                 description={item.description}
-                imageSrc={index === 0 ? "/images/panza-hinchada.jpg" : undefined}
-                imageAlt={index === 0 ? "Mujer con malestar abdominal después de comer" : undefined}
+                imageSrc={
+                  index === 0
+                    ? "/images/panza-hinchada.jpg"
+                    : index === 1
+                      ? "/images/no-sabes-que-comer.jpg"
+                      : undefined
+                }
+                imageAlt={
+                  index === 0
+                    ? "Mujer con malestar abdominal después de comer"
+                    : index === 1
+                      ? "Mujer eligiendo qué preparar frente a la heladera"
+                      : undefined
+                }
               />
             ))}
           </div>
