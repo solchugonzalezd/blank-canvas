@@ -593,43 +593,82 @@
   gap: 1rem;
 }
 
-.ap-compare-card {
+.ap-compare-table {
+  width: 100%;
+  overflow: hidden;
   border: 1px solid rgb(57 53 45 / 13%);
   border-radius: 12px;
+  border-spacing: 0;
+  border-collapse: separate;
   background: var(--ap-white);
-  padding: 1.5rem;
+  box-shadow: var(--ap-shadow);
+  text-align: left;
 }
 
-.ap-compare-card--practical {
+.ap-compare-table--restrictive {
+  --ap-compare-accent: #a4473d;
+  --ap-compare-tint: #fbf0ed;
+  border-color: rgb(164 71 61 / 35%);
+}
+
+.ap-compare-table--practical {
+  --ap-compare-accent: var(--ap-forest);
+  --ap-compare-tint: #edf4ec;
   border-color: rgb(33 77 50 / 40%);
-  box-shadow: var(--ap-shadow);
+}
+
+.ap-compare-table caption {
+  padding: 1.5rem;
+  background: var(--ap-compare-tint);
+  text-align: left;
 }
 
 .ap-compare-kicker {
   margin: 0 0 0.5rem;
-  color: #866d38;
+  color: var(--ap-compare-accent);
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
-.ap-compare-card--practical .ap-compare-kicker {
-  color: var(--ap-forest);
-}
-
-.ap-compare-card h3 {
+.ap-compare-table caption h3 {
   margin: 0;
-  font-size: 1.65rem;
+  color: var(--ap-text);
+  font-size: 1.55rem;
   line-height: 1.25;
 }
 
-.ap-compare-card > p:not(.ap-compare-kicker) {
+.ap-compare-description {
+  margin: 0.7rem 0 0;
   color: var(--ap-muted);
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
-.ap-compare-card ul,
+.ap-compare-table td {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: 1rem 1.25rem;
+  border-top: 1px solid rgb(57 53 45 / 10%);
+  color: #5e5a51;
+  line-height: 1.6;
+}
+
+.ap-compare-mark {
+  display: inline-grid;
+  flex: 0 0 1.45rem;
+  width: 1.45rem;
+  height: 1.45rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--ap-compare-tint);
+  color: var(--ap-compare-accent);
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
 .ap-product-list {
   display: grid;
   gap: 0.8rem;
@@ -638,7 +677,6 @@
   list-style: none;
 }
 
-.ap-compare-card li,
 .ap-product-list li {
   position: relative;
   padding-left: 1.2rem;
@@ -646,16 +684,11 @@
   line-height: 1.6;
 }
 
-.ap-compare-card li::before,
 .ap-product-list li::before {
   position: absolute;
   left: 0;
   color: #aa842e;
   content: "•";
-}
-
-.ap-compare-card--practical li::before {
-  color: var(--ap-forest);
 }
 
 .ap-inline-note {

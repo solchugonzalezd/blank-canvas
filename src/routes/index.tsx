@@ -110,26 +110,40 @@ function Index() {
             Menos restricciones. Más equilibrio en cada plato.
           </SectionHeading>
           <div className="ap-comparison">
-            <article className="ap-compare-card">
-              <p className="ap-compare-kicker">Una mirada rígida</p>
-              <h3 className="ap-serif">{comparison.restrictive.heading}</h3>
-              <p>{comparison.restrictive.description}</p>
-              <ul>
+            <table className="ap-compare-table ap-compare-table--restrictive">
+              <caption>
+                <p className="ap-compare-kicker">Una mirada rígida</p>
+                <h3 className="ap-serif">{comparison.restrictive.heading}</h3>
+                <p className="ap-compare-description">{comparison.restrictive.description}</p>
+              </caption>
+              <tbody>
                 {comparison.restrictive.points.map((point) => (
-                  <li key={point}>{point}</li>
+                  <tr key={point}>
+                    <td>
+                      <span className="ap-compare-mark" aria-hidden="true">×</span>
+                      <span>{point}</span>
+                    </td>
+                  </tr>
                 ))}
-              </ul>
-            </article>
-            <article className="ap-compare-card ap-compare-card--practical">
-              <p className="ap-compare-kicker">La propuesta del ebook</p>
-              <h3 className="ap-serif">{comparison.practical.heading}</h3>
-              <p>{comparison.practical.description}</p>
-              <ul>
+              </tbody>
+            </table>
+            <table className="ap-compare-table ap-compare-table--practical">
+              <caption>
+                <p className="ap-compare-kicker">La propuesta del ebook</p>
+                <h3 className="ap-serif">{comparison.practical.heading}</h3>
+                <p className="ap-compare-description">{comparison.practical.description}</p>
+              </caption>
+              <tbody>
                 {comparison.practical.points.map((point) => (
-                  <li key={point}>{point}</li>
+                  <tr key={point}>
+                    <td>
+                      <span className="ap-compare-mark" aria-hidden="true">✓</span>
+                      <span>{point}</span>
+                    </td>
+                  </tr>
                 ))}
-              </ul>
-            </article>
+              </tbody>
+            </table>
           </div>
           <p className="ap-inline-note">
             El ebook es material informativo general y no reemplaza la orientación de un profesional
