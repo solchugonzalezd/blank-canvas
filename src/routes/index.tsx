@@ -129,7 +129,7 @@ function Index() {
             </table>
             <table className="ap-compare-table ap-compare-table--practical">
               <caption>
-                <p className="ap-compare-kicker">La propuesta del ebook</p>
+                <p className="ap-compare-kicker">CON EL METODO</p>
                 <h3 className="ap-serif">{comparison.practical.heading}</h3>
                 <p className="ap-compare-description">{comparison.practical.description}</p>
               </caption>
