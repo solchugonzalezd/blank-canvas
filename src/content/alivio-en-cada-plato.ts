@@ -31,9 +31,10 @@ export const comparison = {
     heading: "Dietas extremas",
     description: "Una forma extrema de pensar la comida puede sentirse difícil de sostener.",
     points: [
-      "Listas largas de prohibiciones",
-      "La sensación de hacerlo perfecto o abandonar",
-      "Poca flexibilidad para la vida cotidiana",
+      "Son difíciles de sostener y terminás abandonando.",
+      "No sabés qué comer y terminás improvisando.",
+      "Te generan ansiedad y frustración.",
+      "Volvés a los mismos hábitos de antes.",
     ],
   },
   practical: {
