@@ -38,7 +38,7 @@ export const comparison = {
     ],
   },
   practical: {
-    heading: "Alimentación antiinflamatoria práctica",
+    heading: "Metodo Menu Antiinflamatorio",
     description: "Una propuesta más amable, con ideas que se adaptan a tu día a día.",
     points: [
       "Recetas fáciles, rápidas y deliciosas.",
