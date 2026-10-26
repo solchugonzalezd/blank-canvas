@@ -39,7 +39,7 @@ export const comparison = {
   },
   practical: {
     heading: "Metodo Menu Antiinflamatorio",
-    description: "Una propuesta más amable, con ideas que se adaptan a tu día a día.",
+    description: "Todo lo que necesitás para organizar tus comidas, cuidar tu digestión y sentirte más liviana.",
     points: [
       "Recetas fáciles, rápidas y deliciosas.",
       "Ingredientes que conseguís en cualquier supermercado de Uruguay.",
