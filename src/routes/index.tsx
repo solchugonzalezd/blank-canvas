@@ -104,7 +104,7 @@ function Index() {
       <section className="ap-section ap-section--white" id="enfoque">
         <div className="ap-container">
           <SectionHeading
-            eyebrow="LO QUE HACE LA DIFERENCIA"
+            eyebrow="LO QUE CAMBIA CON EL METODO"
             description="Encontra una forma práctica de cuidar tu alimentación con recetas simples y deliciosas, sin pasar hambre ni estar horas en la cocina."
           >
             No necesitás pasar hambre para sentirte mejor.
