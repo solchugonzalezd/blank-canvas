@@ -105,7 +105,7 @@ function Index() {
         <div className="ap-container">
           <SectionHeading
             eyebrow="Un enfoque más amable"
-            description="Encontra una forma práctica de cuidar tu alimentación con recetas simples, deliciosas y fáciles, sin ingredientes difíciles de conseguir ni pasar horas en la cocina."
+            description="Encontra una forma práctica de cuidar tu alimentación con recetas simples, deliciosas y fáciles, sin pasar hambre "
           >
             ¿Y si comer mejor fuera mucho más fácil?
           </SectionHeading>
