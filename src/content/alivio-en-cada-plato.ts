@@ -37,7 +37,7 @@ export const comparison = {
     ],
   },
   practical: {
-    heading: "Alimentación saludable práctica",
+    heading: "Alimentación antiinflamatoria práctica",
     description: "Una propuesta más amable, con ideas que se adaptan a tu día a día.",
     points: [
       "Opciones para elegir según tu rutina",
