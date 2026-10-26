@@ -107,7 +107,7 @@ function Index() {
             eyebrow="LO QUE HACE LA DIFERENCIA"
             description="Encontra una forma práctica de cuidar tu alimentación con recetas simples, deliciosas y fáciles, sin pasar hambre "
           >
-            ¿Y si comer mejor fuera mucho más fácil?
+            No necesitás pasar hambre para sentirte mejor.
           </SectionHeading>
           <div className="ap-comparison">
             <table className="ap-compare-table ap-compare-table--restrictive">
