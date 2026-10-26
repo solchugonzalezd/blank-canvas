@@ -41,9 +41,10 @@ export const comparison = {
     heading: "Alimentación antiinflamatoria práctica",
     description: "Una propuesta más amable, con ideas que se adaptan a tu día a día.",
     points: [
-      "Opciones para elegir según tu rutina",
-      "Variedad sin buscar la perfección",
-      "Disfrutar de la comida y de la mesa",
+      "Recetas fáciles, rápidas y deliciosas.",
+      "Ingredientes que conseguís en cualquier supermercado de Uruguay.",
+      "Menos frustración y más ideas para saber qué cocinar.",
+      "Menos hinchazón y nuevos hábitos para cuidarte y sentirte mejor.",
     ],
   },
 };
