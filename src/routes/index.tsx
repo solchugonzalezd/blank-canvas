@@ -107,7 +107,7 @@ function Index() {
             eyebrow="Un enfoque más amable"
             description="No se trata de hacerlo perfecto: se trata de encontrar opciones prácticas y flexibles para tu vida cotidiana."
           >
-            Menos restricciones. Más equilibrio en cada plato.
+            ¿Y si comer mejor fuera mucho más fácil?
           </SectionHeading>
           <div className="ap-comparison">
             <table className="ap-compare-table ap-compare-table--restrictive">
