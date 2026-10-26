@@ -104,7 +104,7 @@ function Index() {
       <section className="ap-section ap-section--white" id="enfoque">
         <div className="ap-container">
           <SectionHeading
-            eyebrow="Un enfoque más amable"
+            eyebrow="LO QUE HACE LA DIFERENCIA"
             description="Encontra una forma práctica de cuidar tu alimentación con recetas simples, deliciosas y fáciles, sin pasar hambre "
           >
             ¿Y si comer mejor fuera mucho más fácil?
