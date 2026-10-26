@@ -105,7 +105,7 @@ function Index() {
         <div className="ap-container">
           <SectionHeading
             eyebrow="LO QUE HACE LA DIFERENCIA"
-            description="Encontra una forma práctica de cuidar tu alimentación con recetas simples, deliciosas y fáciles, sin pasar hambre "
+            description="Encontra una forma práctica de cuidar tu alimentación con recetas simples y deliciosas, sin pasar hambre ni estar horas en la cocina."
           >
             No necesitás pasar hambre para sentirte mejor.
           </SectionHeading>
