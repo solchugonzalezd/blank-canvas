@@ -112,7 +112,7 @@ function Index() {
           <div className="ap-comparison">
             <table className="ap-compare-table ap-compare-table--restrictive">
               <caption>
-                <p className="ap-compare-kicker">Una mirada rígida</p>
+                <p className="ap-compare-kicker">LO MISMO DE SIEMPRE</p>
                 <h3 className="ap-serif">{comparison.restrictive.heading}</h3>
                 <p className="ap-compare-description">{comparison.restrictive.description}</p>
               </caption>
