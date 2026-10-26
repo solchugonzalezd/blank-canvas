@@ -29,7 +29,7 @@ export const everydayChallenges = [
 export const comparison = {
   restrictive: {
     heading: "Dietas extremas",
-    description: "Una forma rígida de pensar la comida puede sentirse difícil de sostener.",
+    description: "Una forma extrema de pensar la comida puede sentirse difícil de sostener.",
     points: [
       "Listas largas de prohibiciones",
       "La sensación de hacerlo perfecto o abandonar",
