@@ -170,6 +170,13 @@ function Index() {
                     alt="Plato de carne con palta, tomates y huevos"
                     loading="lazy"
                   />
+                ) : recipe.name.startsWith("Opciones rápidas para") ? (
+                  <img
+                    className="ap-recipe-photo"
+                    src="/images/opciones-rapidas.webp.svg"
+                    alt="Bocados de chocolate con frutillas"
+                    loading="lazy"
+                  />
                 ) : recipe.name === "Postres sin azúcar para darte un gusto" ? (
                   <img
                     className="ap-recipe-photo"
