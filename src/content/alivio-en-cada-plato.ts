@@ -52,7 +52,7 @@ export const comparison = {
 export const recipeIdeas = [
   { name: "Comidas antiinflamatorias", note: "Idea de desayuno · ejemplo provisional" },
   { name: "Desayunos y meriendas ", note: "Idea de almuerzo · ejemplo provisional" },
-  { name: "Avena con fruta y canela", note: "Idea dulce · ejemplo provisional" },
+  { name: "Opciones rápidas", note: "Idea dulce · ejemplo provisional" },
 ];
 
 export const productContents = [
