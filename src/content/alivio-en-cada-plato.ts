@@ -50,7 +50,7 @@ export const comparison = {
 };
 
 export const recipeIdeas = [
-  { name: "Comidas antiinflamatorias", note: "Idea de desayuno · ejemplo provisional" },
+  { name: "Comidas antiinflamatorias  para todos los días", note: "Idea de desayuno · ejemplo provisional" },
   { name: "Desayunos y meriendas ", note: "Idea de almuerzo · ejemplo provisional" },
   { name: "Opciones rápidas", note: "Idea dulce · ejemplo provisional" },
   { name: "Postres sin azúcar", note: "Idea de almuerzo · ejemplo provisional" },
