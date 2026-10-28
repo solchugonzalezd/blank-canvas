@@ -163,7 +163,14 @@ function Index() {
           <div className="ap-recipe-grid">
             {recipeIdeas.map((recipe) => (
               <article className="ap-recipe-card" key={recipe.name}>
-                {recipe.name === "Postres sin azúcar para darte un gusto" ? (
+                {recipe.name.startsWith("Comidas antiinflamatorias") ? (
+                  <img
+                    className="ap-recipe-photo"
+                    src="/images/comidas-antiinflamatorias.svg"
+                    alt="Plato de carne con palta, tomates y huevos"
+                    loading="lazy"
+                  />
+                ) : recipe.name === "Postres sin azúcar para darte un gusto" ? (
                   <img
                     className="ap-recipe-photo"
                     src="/images/postres-sin-azucar.svg"
