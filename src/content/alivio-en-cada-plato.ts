@@ -50,7 +50,7 @@ export const comparison = {
 };
 
 export const recipeIdeas = [
-  { name: "Tostadas con palta y huevo", note: "Idea de desayuno · ejemplo provisional" },
+  { name: "Comidas antiinflamatorias", note: "Idea de desayuno · ejemplo provisional" },
   { name: "Bowl tibio de estación", note: "Idea de almuerzo · ejemplo provisional" },
   { name: "Avena con fruta y canela", note: "Idea dulce · ejemplo provisional" },
 ];
