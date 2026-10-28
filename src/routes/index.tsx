@@ -158,7 +158,7 @@ function Index() {
             eyebrow="Ideas para tu mesa"
             description="Una muestra visual provisional. Reemplazaremos estos ejemplos por las recetas confirmadas del ebook."
           >
-            Recetas simples para disfrutar todos los días
+            Todo lo que necesitás para sentirte desinchada y dejar de preguntarte qué cocinar
           </SectionHeading>
           <div className="ap-recipe-grid">
             {recipeIdeas.map((recipe) => (
