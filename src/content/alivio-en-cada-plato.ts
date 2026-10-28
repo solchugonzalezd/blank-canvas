@@ -53,7 +53,7 @@ export const recipeIdeas = [
   { name: "Comidas antiinflamatorias  para todos los días", note: "Idea de desayuno · ejemplo provisional" },
   { name: "Desayunos y meriendas para disfrutar ", note: "Idea de almuerzo · ejemplo provisional" },
   { name: "Opciones rápidas para cuando tenés poco tiempo", note: "Idea dulce · ejemplo provisional" },
-  { name: "Postres sin azúcar", note: "Idea de almuerzo · ejemplo provisional" },
+  { name: "Postres sin azúcar para darte un gusto", note: "Idea de almuerzo · ejemplo provisional" },
   { name: "Cómo reemplazar azúcar y harinas sin dejar de disfrutar la comida", note: "Idea de merienda · ejemplo provisional" },
 ];
 
