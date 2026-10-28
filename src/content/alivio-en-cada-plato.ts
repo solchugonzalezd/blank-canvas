@@ -54,7 +54,7 @@ export const recipeIdeas = [
   { name: "Desayunos y meriendas ", note: "Idea de almuerzo · ejemplo provisional" },
   { name: "Opciones rápidas", note: "Idea dulce · ejemplo provisional" },
   { name: "Postres sin azúcar", note: "Idea de almuerzo · ejemplo provisional" },
-  { name: "Yogur con frutas, semillas y avena", note: "Idea de merienda · ejemplo provisional" },
+  { name: "Cómo reemplazar azúcar y harinas sin dejar de disfrutar la comida", note: "Idea de merienda · ejemplo provisional" },
 ];
 
 export const productContents = [
