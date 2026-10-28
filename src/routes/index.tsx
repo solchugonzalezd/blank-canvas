@@ -166,7 +166,7 @@ function Index() {
                 {recipe.name === "Postres sin azúcar para darte un gusto" ? (
                   <img
                     className="ap-recipe-photo"
-                    src="https://drive.google.com/uc?export=view&id=1F_BT2SwrAUOF27XarUfxY-1gf71RHtqz"
+                    src="/images/postres-sin-azucar.svg"
                     alt="Tarta de chocolate con frutillas, sin azúcar"
                     loading="lazy"
                   />
