@@ -156,7 +156,7 @@ function Index() {
         <div className="ap-container">
           <SectionHeading
             eyebrow="Ideas para tu mesa"
-            description="Una muestra visual provisional. Reemplazaremos estos ejemplos por las recetas confirmadas del ebook."
+            description="Descubrí recetas antiinflamatorias fáciles y deliciosas para organizar tus comidas, cuidar tu digestión y disfrutar de comer mejor sin pasar horas en la cocina."
           >
             Todo lo que necesitás para sentirte desinchada y dejar de preguntarte qué cocinar
           </SectionHeading>
