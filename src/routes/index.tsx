@@ -163,11 +163,20 @@ function Index() {
           <div className="ap-recipe-grid">
             {recipeIdeas.map((recipe) => (
               <article className="ap-recipe-card" key={recipe.name}>
-                <ImagePlaceholder
-                  className="ap-image-placeholder--recipe"
-                  label={`Fotografía de ${recipe.name}`}
-                  detail="Espacio para una fotografía real del plato."
-                />
+                {recipe.name === "Postres sin azúcar para darte un gusto" ? (
+                  <img
+                    className="ap-recipe-photo"
+                    src="https://drive.google.com/uc?export=view&id=1F_BT2SwrAUOF27XarUfxY-1gf71RHtqz"
+                    alt="Tarta de chocolate con frutillas, sin azúcar"
+                    loading="lazy"
+                  />
+                ) : (
+                  <ImagePlaceholder
+                    className="ap-image-placeholder--recipe"
+                    label={`Fotografía de ${recipe.name}`}
+                    detail="Espacio para una fotografía real del plato."
+                  />
+                )}
                 <div className="ap-recipe-card-body">
                   <h3 className="ap-serif">{recipe.name}</h3>
                   <p className="ap-recipe-note">{recipe.note}</p>
