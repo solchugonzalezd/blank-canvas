@@ -51,7 +51,7 @@ export const comparison = {
 
 export const recipeIdeas = [
   { name: "Comidas antiinflamatorias", note: "Idea de desayuno · ejemplo provisional" },
-  { name: "Bowl tibio de estación", note: "Idea de almuerzo · ejemplo provisional" },
+  { name: "Desayunos y meriendas ", note: "Idea de almuerzo · ejemplo provisional" },
   { name: "Avena con fruta y canela", note: "Idea dulce · ejemplo provisional" },
 ];
 
