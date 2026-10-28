@@ -53,7 +53,7 @@ export const recipeIdeas = [
   { name: "Comidas antiinflamatorias", note: "Idea de desayuno · ejemplo provisional" },
   { name: "Desayunos y meriendas ", note: "Idea de almuerzo · ejemplo provisional" },
   { name: "Opciones rápidas", note: "Idea dulce · ejemplo provisional" },
-  { name: "Ensalada tibia de quinoa y verduras", note: "Idea de almuerzo · ejemplo provisional" },
+  { name: "Postres sin azúcar", note: "Idea de almuerzo · ejemplo provisional" },
   { name: "Yogur con frutas, semillas y avena", note: "Idea de merienda · ejemplo provisional" },
 ];
 
