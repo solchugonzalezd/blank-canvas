@@ -901,6 +901,65 @@
   text-align: center;
 }
 
+.ap-value-stack {
+  display: grid;
+  gap: 1rem;
+  max-width: 650px;
+  margin: 2.8rem auto 0;
+}
+
+.ap-value-item {
+  border: 1px solid rgb(255 255 255 / 60%);
+  border-radius: 14px;
+  background: var(--ap-cream);
+  padding: 1.4rem 1.5rem;
+  color: var(--ap-text);
+  box-shadow: var(--ap-shadow);
+}
+
+.ap-value-kicker {
+  margin: 0 0 0.45rem;
+  color: var(--ap-gold);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.ap-value-title {
+  margin: 0;
+  color: var(--ap-forest);
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+.ap-value-copy {
+  margin: 0.55rem 0 0;
+  color: var(--ap-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.ap-value-pricing {
+  display: grid;
+  gap: 0.15rem;
+  justify-items: start;
+}
+
+.ap-value-pricing .ap-offer-price-label {
+  margin-top: 0.4rem;
+}
+
+.ap-value-pricing .ap-offer-price-label:first-child {
+  margin-top: 0;
+}
+
+.ap-value-price-old {
+  margin: 0;
+  color: var(--ap-muted);
+  font-size: 1.05rem;
+}
+
 .ap-faq-list {
   max-width: 820px;
   margin: 0 auto;
