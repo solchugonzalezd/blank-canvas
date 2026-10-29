@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { BookOpen, Coffee, Smartphone, Utensils } from "lucide-react";
 
 import { createFileRoute } from "@tanstack/react-router";
@@ -283,11 +284,16 @@ function Index() {
             </div>
           </aside>
 
-          <div className="ap-product-bonus-panel">
-            <p className="ap-product-bonus-kicker">TU OFERTA ESPECIAL</p>
-            <h3 className="ap-serif">Bonos incluidos</h3>
-            <p>Espacio para mostrar los bonos incluidos. Detalles a confirmar.</p>
+          <div className="ap-product-special-offer">
+            <p className="ap-product-offer-kicker">UNA OPORTUNIDAD PARA EMPEZAR</p>
+            <h3 className="ap-serif">Tu oferta especial</h3>
+            <p className="ap-special-offer-copy">Conseguí el Método Menú Antiinflamatorio y sus bonos incluidos</p>
+            <OfferCountdown />
+            <ActionLink className="ap-product-purchase-button" href={purchaseHref}>
+              QUIERO MI MÉTODO
+            </ActionLink>
           </div>
+          <p className="ap-offer-availability">Vigencia y disponibilidad: información pendiente de confirmar.</p>
         </div>
       </section>
 
@@ -420,5 +426,48 @@ function Index() {
         <p>Textos y detalles comerciales provisionales.</p>
       </footer>
     </main>
+  );
+}
+
+// Configurá una fecha ISO 8601 con zona horaria para activar el contador.
+// Ejemplo: "2026-12-31T23:59:59-03:00". En null, el contador queda oculto.
+const offerEndsAt: string | null = null;
+
+function OfferCountdown() {
+  const getRemaining = () => {
+    const endTime = offerEndsAt ? Date.parse(offerEndsAt) : Number.NaN;
+    return Number.isFinite(endTime) ? Math.max(0, endTime - Date.now()) : null;
+  };
+  const [remaining, setRemaining] = useState<number | null>(getRemaining);
+
+  useEffect(() => {
+    if (!offerEndsAt || !Number.isFinite(Date.parse(offerEndsAt))) return;
+    const update = () => setRemaining(getRemaining());
+    update();
+    const timer = window.setInterval(update, 1000);
+    return () => window.clearInterval(timer);
+  }, []);
+
+  if (remaining === null) return null;
+  const totalSeconds = Math.floor(remaining / 1000);
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  return (
+    <div className="ap-offer-countdown" aria-label="Tiempo restante de la oferta">
+      <div>
+        <strong>{String(hours).padStart(2, "0")}</strong>
+        <span>HORAS</span>
+      </div>
+      <div>
+        <strong>{String(minutes).padStart(2, "0")}</strong>
+        <span>MINUTOS</span>
+      </div>
+      <div>
+        <strong>{String(seconds).padStart(2, "0")}</strong>
+        <span>SEGUNDOS</span>
+      </div>
+    </div>
   );
 }
