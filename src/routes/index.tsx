@@ -235,7 +235,7 @@ function Index() {
               <div className="ap-product-prices" aria-label="Precios por definir">
                 <div className="ap-product-price ap-product-price--previous">
                   <span>Precio anterior</span>
-                  <s>A definir</s>
+                  <s>A 2990</s>
                 </div>
                 <div className="ap-product-price ap-product-price--current">
                   <span>Precio actual</span>
