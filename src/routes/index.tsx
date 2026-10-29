@@ -180,6 +180,13 @@ function Index() {
                     alt="Bocados de chocolate con frutillas"
                     loading="lazy"
                   />
+                ) : recipe.name.startsWith("Cómo reemplazar azúcar y harinas") ? (
+                  <img
+                    className="ap-recipe-photo"
+                    src="/images/reemplazar-azucar-harinas.svg"
+                    alt="Ingredientes frescos para preparar comidas y reemplazar productos refinados"
+                    loading="lazy"
+                  />
                 ) : recipe.name === "Postres sin azúcar para darte un gusto" ? (
                   <img
                     className="ap-recipe-photo"
