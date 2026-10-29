@@ -832,16 +832,16 @@
 }
 
 .ap-offer-section {
-  background: var(--ap-forest);
-  color: var(--ap-cream);
+  background: var(--ap-cream);
+  color: var(--ap-text);
 }
 
 .ap-offer-section .ap-section-heading h2 {
-  color: var(--ap-cream);
+  color: var(--ap-forest);
 }
 
 .ap-offer-section .ap-section-description {
-  color: rgb(248 244 235 / 78%);
+  color: var(--ap-muted);
 }
 
 .ap-offer-card {
