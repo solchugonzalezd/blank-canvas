@@ -149,6 +149,7 @@
   --ap-sand: #e9d4a9;
   --ap-forest: #214d32;
   --ap-gold: #c9a03d;
+  --ap-terracotta: #c06a4b;
   --ap-text: #39352d;
   --ap-muted: #716c61;
   --ap-white: #fffefa;
@@ -901,63 +902,68 @@
   text-align: center;
 }
 
-.ap-value-stack {
+.ap-value-grid {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 1rem;
-  max-width: 650px;
-  margin: 2.8rem auto 0;
+  max-width: 1000px;
+  margin: 2.6rem auto 0;
 }
 
-.ap-value-item {
-  border: 1px solid rgb(255 255 255 / 60%);
+.ap-value-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(214 205 188 / 70%);
   border-radius: 14px;
   background: var(--ap-cream);
-  padding: 1.4rem 1.5rem;
+  padding: 1.5rem;
   color: var(--ap-text);
   box-shadow: var(--ap-shadow);
 }
 
-.ap-value-kicker {
-  margin: 0 0 0.45rem;
-  color: var(--ap-gold);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-
-.ap-value-title {
-  margin: 0;
+.ap-value-card h3 {
+  margin: 0.9rem 0 0;
   color: var(--ap-forest);
-  font-size: 1.5rem;
-  line-height: 1.25;
+  font-size: 1.28rem;
+  line-height: 1.3;
 }
 
-.ap-value-copy {
-  margin: 0.55rem 0 0;
+.ap-value-card p {
+  margin: 0.5rem 0 0;
   color: var(--ap-muted);
-  font-size: 0.95rem;
-  line-height: 1.65;
+  font-size: 0.94rem;
+  line-height: 1.6;
 }
 
-.ap-value-pricing {
-  display: grid;
-  gap: 0.15rem;
-  justify-items: start;
+.ap-value-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 999px;
+  background: var(--ap-forest);
+  color: var(--ap-cream);
 }
 
-.ap-value-pricing .ap-offer-price-label {
-  margin-top: 0.4rem;
+.ap-value-icon svg {
+  width: 1.3rem;
+  height: 1.3rem;
 }
 
-.ap-value-pricing .ap-offer-price-label:first-child {
-  margin-top: 0;
+.ap-value-card--highlight {
+  border: 1.5px solid var(--ap-terracotta);
+  background: var(--ap-white);
 }
 
-.ap-value-price-old {
-  margin: 0;
-  color: var(--ap-muted);
-  font-size: 1.05rem;
+.ap-value-card--highlight .ap-value-icon {
+  background: var(--ap-terracotta);
+}
+
+@media (min-width: 760px) {
+  .ap-value-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .ap-faq-list {

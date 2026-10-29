@@ -1,3 +1,5 @@
+import { BookOpen, Coffee, Smartphone, Utensils } from "lucide-react";
+
 import { createFileRoute } from "@tanstack/react-router";
 
 import metodoMenuProductImage from "../assets/metodo-menu-producto.png.asset.json";
@@ -268,47 +270,32 @@ function Index() {
       <section className="ap-section ap-offer-section" id="oferta">
         <div className="ap-container">
           <SectionHeading
-            eyebrow="La propuesta"
-            description="Revisá los detalles del método antes de avanzar. Los datos comerciales se completarán cuando estén definidos."
+            eyebrow="¿Qué vas a recibir?"
+            description="Recetas, ideas prácticas y herramientas para organizar tus comidas, cuidar tu digestión y dejar de improvisar qué cocinar todos los días"
           >
-            ¿Qué vas a recibir?
+            Todo lo que necesitás para que comer saludable sea más simple
           </SectionHeading>
-          <div className="ap-value-stack">
-            <article className="ap-value-item">
-              <p className="ap-value-kicker">Componente 01</p>
-              <h3 className="ap-serif ap-value-title">Ebook digital</h3>
-              <p className="ap-value-copy">
-                Más de 500 recetas antiinflamatorias para organizar tus comidas, cuidar tu
-                digestión y sentirte más liviana sin pasar horas en la cocina.
-              </p>
+          <div className="ap-value-grid">
+            <article className="ap-value-card">
+              <span className="ap-value-icon"><BookOpen aria-hidden="true" /></span>
+              <h3 className="ap-serif">+500 recetas antiinflamatorias</h3>
+              <p>Comidas fáciles, variadas y deliciosas para incorporar a tu rutina</p>
             </article>
-            <article className="ap-value-item">
-              <p className="ap-value-kicker">Componente 02</p>
-              <h3 className="ap-serif ap-value-title">Organización de comidas</h3>
-              <p className="ap-value-copy">
-                Ideas para organizar el menú de la semana y recetas para sumar variedad a tus
-                comidas.
-              </p>
+            <article className="ap-value-card ap-value-card--highlight">
+              <span className="ap-value-icon"><Smartphone aria-hidden="true" /></span>
+              <h3 className="ap-serif">App para organizar tus comidas</h3>
+              <p>Organizá tu menú semanal, elegí recetas y consultá los ingredientes desde un solo lugar</p>
             </article>
-            <article className="ap-value-item">
-              <p className="ap-value-kicker">Componente 03</p>
-              <h3 className="ap-serif ap-value-title">Bonos incluidos</h3>
-              <p className="ap-value-copy">
-                Material adicional para acompañar el método. Los recursos incluidos se confirmarán
-                al definir el producto final.
-              </p>
+            <article className="ap-value-card">
+              <span className="ap-value-icon"><Coffee aria-hidden="true" /></span>
+              <h3 className="ap-serif">Ideas para desayunos y meriendas</h3>
+              <p>Más opciones para variar tus comidas y disfrutar preparaciones ricas en distintos momentos del día</p>
             </article>
-            <div className="ap-offer-card ap-value-pricing">
-              <p className="ap-offer-price-label">Precio anterior</p>
-              <p className="ap-value-price-old"><s>A 2990</s></p>
-              <p className="ap-offer-price-label">Precio actual</p>
-              <p className="ap-offer-price">{"590$\u00a0"}</p>
-              <ActionLink href={purchaseHref}>Quiero el ebook</ActionLink>
-              <p className="ap-offer-note">
-                Sin integración de pago activa. El enlace se configura en el contenido del proyecto
-                cuando el checkout esté listo.
-              </p>
-            </div>
+            <article className="ap-value-card">
+              <span className="ap-value-icon"><Utensils aria-hidden="true" /></span>
+              <h3 className="ap-serif">Snacks, postres y alternativas prácticas</h3>
+              <p>Ideas dulces y saladas para sumar variedad y disfrutar de tus comidas</p>
+            </article>
           </div>
         </div>
       </section>
