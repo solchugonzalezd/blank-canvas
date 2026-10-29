@@ -304,13 +304,22 @@ function Index() {
         <div className="ap-container">
           <SectionHeading
             eyebrow="Material adicional"
-            description="Ideas de bonos para acompañar el ebook. Los recursos incluidos se confirmarán al definir el producto final."
+            description="Cinco ebooks digitales incluidos de regalo con tu compra del método."
           >
             Además, también recibís
           </SectionHeading>
           <div className="ap-bonus-grid ap-bonus-grid--featured">
             {bonusIdeas.map((bonus, index) => (
               <article className="ap-bonus-card ap-bonus-card--featured" key={bonus.name}>
+                {bonus.image ? (
+                  <div className="ap-bonus-cover">
+                    <img
+                      src={bonus.image}
+                      alt={`Portada del ebook ${bonus.name}`}
+                      loading="lazy"
+                    />
+                  </div>
+                ) : null}
                 <span className="ap-card-number">Bono 0{index + 1}</span>
                 <h3 className="ap-serif">{bonus.name}</h3>
                 <p>{bonus.note}</p>
