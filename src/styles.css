@@ -1094,3 +1094,183 @@
     transition: none;
   }
 }
+
+/* Oferta principal del producto: estilos limitados a la sección #producto */
+#producto.ap-product-offer-section {
+  background: var(--ap-cream);
+}
+#producto .ap-product-offer {
+  max-width: 1060px;
+}
+#producto .ap-product-offer-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+#producto .ap-product-offer-art {
+  display: grid;
+  min-width: 0;
+  place-items: center;
+}
+#producto .ap-product-offer-image {
+  display: block;
+  width: min(100%, 500px);
+  height: auto;
+  max-height: 620px;
+  aspect-ratio: 2 / 3;
+  border: 1px solid var(--ap-line);
+  border-radius: 12px;
+  background: var(--ap-white);
+  object-fit: contain;
+  object-position: center;
+  box-shadow: var(--ap-shadow);
+}
+#producto .ap-product-offer-copy {
+  min-width: 0;
+}
+#producto .ap-product-offer-kicker,
+#producto .ap-product-bonus-kicker {
+  margin: 0 0 0.8rem;
+  color: #9a5945;
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1.5;
+}
+#producto .ap-product-offer-title {
+  margin: 0;
+  color: var(--ap-text);
+  font-size: clamp(2.15rem, 5vw, 3.3rem);
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+}
+#producto .ap-product-offer-description {
+  margin: 1rem 0 0;
+  color: var(--ap-muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+#producto .ap-product-prices {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 1rem 2rem;
+  margin-top: 1.4rem;
+}
+#producto .ap-product-price {
+  display: grid;
+  gap: 0.2rem;
+}
+#producto .ap-product-price span {
+  color: var(--ap-muted);
+  font-size: 0.78rem;
+}
+#producto .ap-product-price--previous s {
+  color: #837c70;
+  font-size: 1.05rem;
+}
+#producto .ap-product-price--current strong {
+  color: var(--ap-forest);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+#producto .ap-product-offer-badge {
+  display: table;
+  margin-top: 1.2rem;
+  border: 1px solid rgb(154 89 69 / 35%);
+  border-radius: 999px;
+  background: #f2e7dc;
+  padding: 0.45rem 0.8rem;
+  color: #8f503d;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+}
+#producto .ap-product-purchase-button {
+  width: 100%;
+  min-height: 54px;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background: #596744;
+  border-color: #596744;
+  letter-spacing: 0.045em;
+}
+#producto .ap-product-purchase-button:hover {
+  background: #465438;
+  border-color: #465438;
+}
+#producto .ap-product-protection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.4rem;
+  border: 1px solid rgb(33 77 50 / 30%);
+  border-radius: 12px;
+  background: #edf3e9;
+  padding: 1.15rem 1.25rem;
+}
+#producto .ap-product-shield {
+  flex: 0 0 2rem;
+  width: 2rem;
+  color: var(--ap-forest);
+}
+#producto .ap-product-protection h3 {
+  margin: 0;
+  color: var(--ap-forest);
+  font-size: 0.86rem;
+  letter-spacing: 0.055em;
+}
+#producto .ap-product-protection p {
+  margin: 0.3rem 0 0;
+  color: #5e6657;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+#producto .ap-product-bonus-panel {
+  margin-top: 1.25rem;
+  border: 1px solid rgb(154 89 69 / 48%);
+  border-radius: 12px;
+  background: var(--ap-white);
+  padding: 1.5rem;
+  text-align: center;
+}
+#producto .ap-product-bonus-kicker {
+  margin-bottom: 0.35rem;
+}
+#producto .ap-product-bonus-panel h3 {
+  margin: 0;
+  color: var(--ap-text);
+  font-size: 1.8rem;
+  line-height: 1.25;
+}
+#producto .ap-product-bonus-panel > p:last-child {
+  margin: 0.65rem auto 0;
+  color: var(--ap-muted);
+  line-height: 1.65;
+}
+@media (min-width: 900px) {
+  #producto .ap-product-offer-layout {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr);
+    gap: 3.5rem;
+  }
+  #producto .ap-product-offer-image {
+    width: 100%;
+    max-width: 520px;
+  }
+  #producto .ap-product-offer-copy {
+    padding-block: 1.5rem;
+  }
+  #producto .ap-product-purchase-button {
+    width: auto;
+    min-width: 280px;
+  }
+  #producto .ap-product-protection {
+    padding: 1.3rem 1.5rem;
+  }
+  #producto .ap-product-bonus-panel {
+    padding: 1.8rem;
+  }
+}

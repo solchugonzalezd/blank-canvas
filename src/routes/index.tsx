@@ -211,38 +211,56 @@ function Index() {
         </div>
       </section>
 
-      <section className="ap-section" id="producto">
-        <div className="ap-container ap-product-grid">
-          <div>
-            <SectionHeading
-              eyebrow="Conocé el producto"
-              description="Alivio en Cada Plato es un ebook digital pensado para acercarte ideas cotidianas de alimentación saludable, sin presentarse como una dieta ni como un tratamiento."
-            >
-              Una guía para volver a mirar tus comidas con calma
-            </SectionHeading>
-            <div className="ap-product-card">
-              <h3>Contenido provisorio del ebook</h3>
-              <ul className="ap-product-list">
-                {productContents.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-              <h3 className="ap-bonus-heading">Bonos sugeridos</h3>
-              <div className="ap-bonus-grid">
-                {bonusIdeas.map((bonus) => (
-                  <article className="ap-bonus-card" key={bonus.name}>
-                    <h3>{bonus.name}</h3>
-                    <p>{bonus.note}</p>
-                  </article>
-                ))}
+      <section className="ap-section ap-product-offer-section" id="producto" aria-labelledby="product-offer-title">
+        <div className="ap-container ap-product-offer">
+          <div className="ap-product-offer-layout">
+            <div className="ap-product-offer-art">
+              <img
+                className="ap-product-offer-image"
+                src="/images/metodo-menu-producto.jpg"
+                alt="Portada del ebook Método Menú Antiinflamatorio"
+                width="1024"
+                height="1536"
+                loading="lazy"
+              />
+            </div>
+            <div className="ap-product-offer-copy">
+              <p className="ap-product-offer-kicker">TU NUEVA FORMA DE COMER MEJOR</p>
+              <h2 className="ap-serif ap-product-offer-title" id="product-offer-title">MÉTODO MENÚ ANTIINFLAMATORIO</h2>
+              <p className="ap-product-offer-description">
+                Más de 500 recetas antiinflamatorias para organizar tus comidas, cuidar tu digestión y sentirte más liviana sin pasar horas en la cocina
+              </p>
+              <div className="ap-product-prices" aria-label="Precios por definir">
+                <div className="ap-product-price ap-product-price--previous">
+                  <span>Precio anterior</span>
+                  <s>A definir</s>
+                </div>
+                <div className="ap-product-price ap-product-price--current">
+                  <span>Precio actual</span>
+                  <strong>A definir</strong>
+                </div>
               </div>
+              <span className="ap-product-offer-badge">OFERTA ESPECIAL</span>
+              <ActionLink className="ap-product-purchase-button" href={purchaseHref}>QUIERO MI MÉTODO</ActionLink>
             </div>
           </div>
-          <ImagePlaceholder
-            className="ap-product-image"
-            label="Mockup del ebook abierto junto a ingredientes naturales"
-            detail="Espacio para fotografía del producto o páginas interiores."
-          />
+
+          <aside className="ap-product-protection" aria-label="Información de compra">
+            <svg className="ap-product-shield" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 3 19 6v5c0 4.7-2.9 8-7 10-4.1-2-7-5.3-7-10V6l7-3Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
+              <path d="m9 12 2 2 4-4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            <div>
+              <h3>TU COMPRA ESTÁ PROTEGIDA</h3>
+              <p>Consultá las condiciones de compra y devolución antes de adquirir tu método</p>
+            </div>
+          </aside>
+
+          <div className="ap-product-bonus-panel">
+            <p className="ap-product-bonus-kicker">TU OFERTA ESPECIAL</p>
+            <h3 className="ap-serif">Bonos incluidos</h3>
+            <p>Espacio para mostrar los bonos incluidos. Detalles a confirmar.</p>
+          </div>
         </div>
       </section>
 
