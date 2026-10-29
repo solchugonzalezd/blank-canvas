@@ -306,7 +306,7 @@ function Index() {
             eyebrow="ADEMÁS, TAMBIÉN RECIBÍS"
             description="Cinco ebooks digitales incluidos de regalo con tu compra del método."
           >
-            Además, también recibís
+            TODO esto gratis
           </SectionHeading>
           <div className="ap-bonus-grid ap-bonus-grid--featured">
             {bonusIdeas.map((bonus, index) => (
