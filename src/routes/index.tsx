@@ -13,20 +13,23 @@ import {
   purchaseHref,
   recipeIdeas,
 } from "../content/alivio-en-cada-plato";
-import {
-  ActionLink,
-  ImagePlaceholder,
-  PointCard,
-  SectionHeading,
-} from "../components/landing/landing-primitives";
+import { ActionLink, ImagePlaceholder, PointCard, SectionHeading } from "../components/landing/landing-primitives";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Alivio en Cada Plato | Método menú antiinflamatorio" },
-      { name: "description", content: "Recetas fáciles e ideas prácticas para cuidar tu digestión y organizar tus comidas sin dietas extremas." },
+      {
+        name: "description",
+        content:
+          "Recetas fáciles e ideas prácticas para cuidar tu digestión y organizar tus comidas sin dietas extremas.",
+      },
       { property: "og:title", content: "Alivio en Cada Plato | Método menú antiinflamatorio" },
-      { property: "og:description", content: "Recetas fáciles e ideas prácticas para cuidar tu digestión y organizar tus comidas sin dietas extremas." },
+      {
+        property: "og:description",
+        content:
+          "Recetas fáciles e ideas prácticas para cuidar tu digestión y organizar tus comidas sin dietas extremas.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -43,7 +46,8 @@ function Index() {
           ¿Cansada de la panza <span className="ap-gold">hinchada</span>?
         </h1>
         <p className="ap-hero-copy">
-          Descubre recetas fáciles y deliciosas para cuidar tu digestión, sentirte mejor y recuperar la confianza frente al espejo, sin dietas extremas.
+          Descubre recetas fáciles y deliciosas para cuidar tu digestión, sentirte mejor y recuperar la confianza frente
+          al espejo, sin dietas extremas.
         </p>
 
         <img
@@ -123,7 +127,9 @@ function Index() {
                 {comparison.restrictive.points.map((point) => (
                   <tr key={point}>
                     <td>
-                      <span className="ap-compare-mark" aria-hidden="true">×</span>
+                      <span className="ap-compare-mark" aria-hidden="true">
+                        ×
+                      </span>
                       <span>{point}</span>
                     </td>
                   </tr>
@@ -140,7 +146,9 @@ function Index() {
                 {comparison.practical.points.map((point) => (
                   <tr key={point}>
                     <td>
-                      <span className="ap-compare-mark" aria-hidden="true">✓</span>
+                      <span className="ap-compare-mark" aria-hidden="true">
+                        ✓
+                      </span>
                       <span>{point}</span>
                     </td>
                   </tr>
@@ -229,9 +237,12 @@ function Index() {
             </div>
             <div className="ap-product-offer-copy">
               <p className="ap-product-offer-kicker">TU NUEVA FORMA DE COMER MEJOR</p>
-              <h2 className="ap-serif ap-product-offer-title" id="product-offer-title">MÉTODO MENÚ ANTIINFLAMATORIO</h2>
+              <h2 className="ap-serif ap-product-offer-title" id="product-offer-title">
+                MÉTODO MENÚ ANTIINFLAMATORIO
+              </h2>
               <p className="ap-product-offer-description">
-                Más de 500 recetas antiinflamatorias para organizar tus comidas, cuidar tu digestión y sentirte más liviana sin pasar horas en la cocina
+                Más de 500 recetas antiinflamatorias para organizar tus comidas, cuidar tu digestión y sentirte más
+                liviana sin pasar horas en la cocina
               </p>
               <div className="ap-product-prices" aria-label="Precios por definir">
                 <div className="ap-product-price ap-product-price--previous">
@@ -244,14 +255,27 @@ function Index() {
                 </div>
               </div>
               <span className="ap-product-offer-badge">OFERTA ESPECIAL</span>
-              <ActionLink className="ap-product-purchase-button" href={purchaseHref}>QUIERO MI MÉTODO</ActionLink>
+              <ActionLink className="ap-product-purchase-button" href={purchaseHref}>
+                QUIERO MI MÉTODO
+              </ActionLink>
             </div>
           </div>
 
           <aside className="ap-product-protection" aria-label="Información de compra">
             <svg className="ap-product-shield" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M12 3 19 6v5c0 4.7-2.9 8-7 10-4.1-2-7-5.3-7-10V6l7-3Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
-              <path d="m9 12 2 2 4-4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+              <path
+                d="M12 3 19 6v5c0 4.7-2.9 8-7 10-4.1-2-7-5.3-7-10V6l7-3Z"
+                stroke="currentColor"
+                strokeWidth="1.7"
+                strokeLinejoin="round"
+              />
+              <path
+                d="m9 12 2 2 4-4"
+                stroke="currentColor"
+                strokeWidth="1.7"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
             <div>
               <h3>TU COMPRA ESTÁ PROTEGIDA</h3>
@@ -277,22 +301,30 @@ function Index() {
           </SectionHeading>
           <div className="ap-value-grid">
             <article className="ap-value-card">
-              <span className="ap-value-icon"><BookOpen aria-hidden="true" /></span>
+              <span className="ap-value-icon">
+                <BookOpen aria-hidden="true" />
+              </span>
               <h3 className="ap-serif">+500 recetas antiinflamatorias</h3>
               <p>Comidas fáciles, variadas y deliciosas para incorporar a tu rutina</p>
             </article>
             <article className="ap-value-card ap-value-card--highlight">
-              <span className="ap-value-icon"><Smartphone aria-hidden="true" /></span>
+              <span className="ap-value-icon">
+                <Smartphone aria-hidden="true" />
+              </span>
               <h3 className="ap-serif">App para organizar tus comidas</h3>
               <p>Organizá tu menú semanal, elegí recetas y consultá los ingredientes desde un solo lugar</p>
             </article>
             <article className="ap-value-card">
-              <span className="ap-value-icon"><Coffee aria-hidden="true" /></span>
+              <span className="ap-value-icon">
+                <Coffee aria-hidden="true" />
+              </span>
               <h3 className="ap-serif">Ideas para desayunos y meriendas</h3>
               <p>Más opciones para variar tus comidas y disfrutar preparaciones ricas en distintos momentos del día</p>
             </article>
             <article className="ap-value-card">
-              <span className="ap-value-icon"><Utensils aria-hidden="true" /></span>
+              <span className="ap-value-icon">
+                <Utensils aria-hidden="true" />
+              </span>
               <h3 className="ap-serif">Snacks, postres y alternativas prácticas</h3>
               <p>Ideas dulces y saladas para sumar variedad y disfrutar de tus comidas</p>
             </article>
@@ -313,18 +345,28 @@ function Index() {
               <article className="ap-bonus-card ap-bonus-card--featured" key={bonus.name}>
                 {bonus.image ? (
                   <div className="ap-bonus-cover">
-                    <img
-                      src={bonus.image}
-                      alt={`Portada del ebook ${bonus.name}`}
-                      loading="lazy"
-                    />
+                    <img src={bonus.image} alt={`Portada del ebook ${bonus.name}`} loading="lazy" />
                   </div>
                 ) : null}
                 <span className="ap-card-number">Bono 0{index + 1}</span>
                 <h3 className="ap-serif">{bonus.name}</h3>
                 <p>{bonus.note}</p>
+                <p>
+                  <del>Valor individual: a definir</del>
+                </p>
+                <p>
+                  <strong>GRATIS</strong>
+                </p>
               </article>
             ))}
+          </div>
+          <div className="ap-bonus-total">
+            <p>
+              Total por separado: <del>a definir</del>
+            </p>
+            <p>
+              <strong>HOY: GRATIS</strong>
+            </p>
           </div>
         </div>
       </section>
@@ -342,8 +384,8 @@ function Index() {
               “ ”
             </p>
             <p>
-              Estamos reuniendo las primeras opiniones para publicar acá. Esta sección se completará
-              con testimonios reales; no usamos reseñas inventadas.
+              Estamos reuniendo las primeras opiniones para publicar acá. Esta sección se completará con testimonios
+              reales; no usamos reseñas inventadas.
             </p>
           </div>
         </div>
