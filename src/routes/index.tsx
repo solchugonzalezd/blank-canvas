@@ -166,6 +166,13 @@ function Index() {
                     alt="Plato de carne con palta, tomates y huevos"
                     loading="lazy"
                   />
+                ) : recipe.name.startsWith("Desayunos y meriendas para disfrutar") ? (
+                  <img
+                    className="ap-recipe-photo"
+                    src="/images/desayunos-meriendas.svg"
+                    alt="Tortitas de arroz con frutillas, banana, mantequilla de maní y arándanos"
+                    loading="lazy"
+                  />
                 ) : recipe.name.startsWith("Opciones rápidas para") ? (
                   <img
                     className="ap-recipe-photo"
