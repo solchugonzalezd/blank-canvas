@@ -802,6 +802,23 @@
   font-size: 0.9rem;
 }
 
+.ap-bonus-cover {
+  width: 100%;
+  margin-bottom: 1.1rem;
+  border: 1px solid var(--ap-line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--ap-cream);
+}
+
+.ap-bonus-cover img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: contain;
+  object-position: center;
+}
+
 .ap-testimonials-empty {
   max-width: 760px;
   margin: 0 auto;
