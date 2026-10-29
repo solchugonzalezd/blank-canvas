@@ -239,7 +239,7 @@ function Index() {
                 </div>
                 <div className="ap-product-price ap-product-price--current">
                   <span>Precio actual</span>
-                  <strong>A definir</strong>
+                  <strong>{"590$\u00a0"}</strong>
                 </div>
               </div>
               <span className="ap-product-offer-badge">OFERTA ESPECIAL</span>
