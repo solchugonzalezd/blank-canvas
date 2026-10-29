@@ -183,7 +183,7 @@ function Index() {
                 ) : recipe.name.startsWith("Cómo reemplazar azúcar y harinas") ? (
                   <img
                     className="ap-recipe-photo"
-                    src="/images/reemplazar-azucar-harinas.svg"
+                    src="https://drive.google.com/uc?export=view&id=18q7-dkCVeu0ShxeloN_ej4JBfwGLkAZK"
                     alt="Ingredientes frescos para preparar comidas y reemplazar productos refinados"
                     loading="lazy"
                   />
