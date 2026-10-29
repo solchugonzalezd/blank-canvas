@@ -1251,7 +1251,7 @@
   color: var(--ap-muted);
   line-height: 1.65;
 }
-@media (min-width: 900px) {
+@media (min-width: 760px) {
   #producto .ap-product-offer-layout {
     grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr);
     gap: 3.5rem;
