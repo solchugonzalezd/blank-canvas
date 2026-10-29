@@ -1,3 +1,9 @@
+import bonoBatidosImage from "../assets/bono-batidos.png.asset.json";
+import bonoComidaRapidaImage from "../assets/bono-comida-rapida.png.asset.json";
+import bonoPanaderiaImage from "../assets/bono-panaderia.png.asset.json";
+import bonoRecetasMateImage from "../assets/bono-recetas-mate.png.asset.json";
+import bonoRecetasVeranoImage from "../assets/bono-recetas-verano.png.asset.json";
+
 /** Provisional sales-page copy. Replace these examples with confirmed product details. */
 export const purchaseHref = "#oferta"; // Set the checkout URL here when one is available.
 
@@ -65,8 +71,31 @@ export const productContents = [
 ];
 
 export const bonusIdeas = [
-  { name: "Planificador semanal", note: "Bono sugerido · confirmar si se incluirá" },
-  { name: "Lista de compras", note: "Bono sugerido · confirmar si se incluirá" },
+  {
+    name: "Recetas para acompañar el mate",
+    note: "Opciones dulces y saladas para disfrutar tus mates sin complicarte",
+    image: bonoRecetasMateImage.url,
+  },
+  {
+    name: "Comida rápida saludable",
+    note: "Versiones más saludables de tus comidas favoritas: pizzas, hamburguesas, nuggets y más",
+    image: bonoComidaRapidaImage.url,
+  },
+  {
+    name: "Recetas de Verano",
+    note: "Recetas frescas, livianas y fáciles para disfrutar durante los días de calor",
+    image: bonoRecetasVeranoImage.url,
+  },
+  {
+    name: "Batidos y Bebidas Antiinflamatorias",
+    note: "Combinaciones fáciles y deliciosas para sumar variedad a tu alimentación todos los días",
+    image: bonoBatidosImage.url,
+  },
+  {
+    name: "Panadería Saludable",
+    note: "Panes, budines, muffins, pancakes y otras preparaciones para disfrutar opciones caseras y saludables",
+    image: bonoPanaderiaImage.url,
+  },
 ];
 
 export const offerDetails = [
