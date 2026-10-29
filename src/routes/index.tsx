@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import metodoMenuProductImage from "../assets/metodo-menu-producto.png.asset.json";
+
 import {
   bonusIdeas,
   comparison,
@@ -217,10 +219,10 @@ function Index() {
             <div className="ap-product-offer-art">
               <img
                 className="ap-product-offer-image"
-                src="/images/metodo-menu-producto.jpg"
+                src={metodoMenuProductImage.url}
                 alt="Portada del ebook Método Menú Antiinflamatorio"
-                width="1024"
-                height="1536"
+                width="1254"
+                height="1254"
                 loading="lazy"
               />
             </div>

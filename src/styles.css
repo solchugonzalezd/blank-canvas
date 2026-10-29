@@ -1118,7 +1118,6 @@
   width: min(100%, 500px);
   height: auto;
   max-height: 620px;
-  aspect-ratio: 2 / 3;
   border: 1px solid var(--ap-line);
   border-radius: 12px;
   background: var(--ap-white);
