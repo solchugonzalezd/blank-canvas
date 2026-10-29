@@ -7,7 +7,6 @@ import {
   comparison,
   everydayChallenges,
   faqItems,
-  offerDetails,
   productContents,
   purchaseHref,
   recipeIdeas,
@@ -270,25 +269,46 @@ function Index() {
         <div className="ap-container">
           <SectionHeading
             eyebrow="La propuesta"
-            description="Revisá los detalles del producto antes de avanzar. Los datos comerciales se completarán cuando estén definidos."
+            description="Revisá los detalles del método antes de avanzar. Los datos comerciales se completarán cuando estén definidos."
           >
-            Sumá nuevas ideas saludables a tu rutina
+            ¿Qué vas a recibir?
           </SectionHeading>
-          <div className="ap-offer-card">
-            <p className="ap-eyebrow">Ebook digital</p>
-            <h3 className="ap-offer-title">Alivio en Cada Plato</h3>
-            <p className="ap-offer-price-label">Precio</p>
-            <p className="ap-offer-price">A definir</p>
-            <ul className="ap-offer-list">
-              {offerDetails.map((detail) => (
-                <li key={detail}>{detail}</li>
-              ))}
-            </ul>
-            <ActionLink href={purchaseHref}>Quiero el ebook</ActionLink>
-            <p className="ap-offer-note">
-              Sin integración de pago activa. El enlace se configura en el contenido del proyecto
-              cuando el checkout esté listo.
-            </p>
+          <div className="ap-value-stack">
+            <article className="ap-value-item">
+              <p className="ap-value-kicker">Componente 01</p>
+              <h3 className="ap-serif ap-value-title">Ebook digital</h3>
+              <p className="ap-value-copy">
+                Más de 500 recetas antiinflamatorias para organizar tus comidas, cuidar tu
+                digestión y sentirte más liviana sin pasar horas en la cocina.
+              </p>
+            </article>
+            <article className="ap-value-item">
+              <p className="ap-value-kicker">Componente 02</p>
+              <h3 className="ap-serif ap-value-title">Organización de comidas</h3>
+              <p className="ap-value-copy">
+                Ideas para organizar el menú de la semana y recetas para sumar variedad a tus
+                comidas.
+              </p>
+            </article>
+            <article className="ap-value-item">
+              <p className="ap-value-kicker">Componente 03</p>
+              <h3 className="ap-serif ap-value-title">Bonos incluidos</h3>
+              <p className="ap-value-copy">
+                Material adicional para acompañar el método. Los recursos incluidos se confirmarán
+                al definir el producto final.
+              </p>
+            </article>
+            <div className="ap-offer-card ap-value-pricing">
+              <p className="ap-offer-price-label">Precio anterior</p>
+              <p className="ap-value-price-old"><s>A 2990</s></p>
+              <p className="ap-offer-price-label">Precio actual</p>
+              <p className="ap-offer-price">{"590$\u00a0"}</p>
+              <ActionLink href={purchaseHref}>Quiero el ebook</ActionLink>
+              <p className="ap-offer-note">
+                Sin integración de pago activa. El enlace se configura en el contenido del proyecto
+                cuando el checkout esté listo.
+              </p>
+            </div>
           </div>
         </div>
       </section>
