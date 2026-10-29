@@ -145,10 +145,6 @@ function Index() {
               </tbody>
             </table>
           </div>
-          <p className="ap-inline-note">
-            El ebook es material informativo general y no reemplaza la orientación de un profesional
-            de salud.
-          </p>
         </div>
       </section>
 
