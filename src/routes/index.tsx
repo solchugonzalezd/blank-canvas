@@ -304,7 +304,7 @@ function Index() {
         <div className="ap-container">
           <SectionHeading
             eyebrow="ADEMÁS, TAMBIÉN RECIBÍS"
-            description="Cinco ebooks digitales incluidos de regalo con tu compra del método."
+            description="Con tu compra de hoy, recibís estos bonos sin costo adicional."
           >
             TODO esto gratis
           </SectionHeading>
