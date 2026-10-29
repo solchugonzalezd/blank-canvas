@@ -303,7 +303,7 @@ function Index() {
       <section className="ap-section ap-section--sand" id="bonos">
         <div className="ap-container">
           <SectionHeading
-            eyebrow="Material adicional"
+            eyebrow="ADEMÁS, TAMBIÉN RECIBÍS"
             description="Cinco ebooks digitales incluidos de regalo con tu compra del método."
           >
             Además, también recibís
