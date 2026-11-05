@@ -414,7 +414,7 @@ function Index() {
             ))}
           </div>
           <div className="ap-final-cta">
-            <p className="ap-eyebrow">Alivio en Cada Plato</p>
+            <p className="ap-eyebrow">METODO MENU ANTIINFLAMATORIO</p>
             <h2 className="ap-serif">Una forma más amable de inspirar tu cocina.</h2>
             <ActionLink href={purchaseHref}>Ver detalles de la oferta</ActionLink>
           </div>
